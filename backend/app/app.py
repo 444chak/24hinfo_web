@@ -1,4 +1,5 @@
 from flask import Flask
+
 # ...existing imports...
 from app.routes.cultural_items import cultural_items_bp
 

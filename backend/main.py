@@ -7,7 +7,7 @@ from app.api import api_router
 app = FastAPI(
     title=settings.APP_NAME,
     version=settings.API_VERSION,
-    description="API pour les informations culturelles essentielles de Lyon"
+    description="API pour les informations culturelles essentielles de Lyon",
 )
 
 # Configurer CORS
@@ -22,6 +22,7 @@ app.add_middleware(
 # Inclure le routeur API principal
 app.include_router(api_router)
 
+
 @app.get("/")
 async def root():
     """
@@ -30,10 +31,12 @@ async def root():
     return {
         "message": "Bienvenue sur l'API Culturelle de Lyon!",
         "version": settings.API_VERSION,
-        "documentation": "/docs"
+        "documentation": "/docs",
     }
+
 
 # Pour démarrer l'application avec uvicorn
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
