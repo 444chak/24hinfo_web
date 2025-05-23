@@ -19,6 +19,11 @@ async def get_venues(
 ):
     """
     Récupère les lieux culturels avec filtrage optionnel
+    
+    Exemples:
+    - /api/venues?category_id=2 : lieux de la catégorie 2
+    - /api/venues?arrondissement=Lyon%205ème : lieux dans Lyon 5ème
+    - /api/venues?category_id=2&arrondissement=Lyon%205ème : combinaison de filtres
     """
     if category_id is not None:
         return get_venues_by_category(category_id)
@@ -40,17 +45,3 @@ async def get_venue(venue_id: int):
             detail=f"Le lieu culturel avec l'ID {venue_id} n'a pas été trouvé"
         )
     return venue
-
-@router.get("/category/{category_id}", response_model=List[Venue])
-async def get_venues_for_category(category_id: int):
-    """
-    Récupère tous les lieux culturels pour une catégorie spécifique
-    """
-    return get_venues_by_category(category_id)
-
-@router.get("/arrondissement/{arrondissement}", response_model=List[Venue])
-async def get_venues_for_arrondissement(arrondissement: Arrondissement):
-    """
-    Récupère tous les lieux culturels pour un arrondissement spécifique
-    """
-    return get_venues_by_arrondissement(arrondissement)

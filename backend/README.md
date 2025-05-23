@@ -24,19 +24,16 @@ L'API organise les données culturelles en 4 types principaux :
 - `GET /api/events?category_id={id}` - Événements filtrés par catégorie
 - `GET /api/events?arrondissement={arrondissement}` - Événements filtrés par arrondissement
 - `GET /api/events?upcoming_only=true` - Événements à venir uniquement
+- `GET /api/events?category_id={id}&arrondissement={arrondissement}` - Combinaison de filtres
 - `GET /api/events/{event_id}` - Détails d'un événement spécifique
-- `GET /api/events/category/{category_id}` - Événements par catégorie
-- `GET /api/events/arrondissement/{arrondissement}` - Événements par arrondissement
-- `GET /api/events/upcoming` - Événements à venir
 
 ### Lieux culturels
 
 - `GET /api/venues` - Liste de tous les lieux culturels
 - `GET /api/venues?category_id={id}` - Lieux filtrés par catégorie
 - `GET /api/venues?arrondissement={arrondissement}` - Lieux filtrés par arrondissement
+- `GET /api/venues?category_id={id}&arrondissement={arrondissement}` - Combinaison de filtres
 - `GET /api/venues/{venue_id}` - Détails d'un lieu spécifique
-- `GET /api/venues/category/{category_id}` - Lieux par catégorie
-- `GET /api/venues/arrondissement/{arrondissement}` - Lieux par arrondissement
 
 ### Monuments
 
@@ -44,10 +41,8 @@ L'API organise les données culturelles en 4 types principaux :
 - `GET /api/monuments?arrondissement={arrondissement}` - Monuments filtrés par arrondissement
 - `GET /api/monuments?is_unesco=true` - Monuments classés UNESCO
 - `GET /api/monuments?historical_period={period}` - Monuments filtrés par période historique
+- `GET /api/monuments?arrondissement={arrondissement}&is_unesco=true` - Combinaison de filtres
 - `GET /api/monuments/{monument_id}` - Détails d'un monument spécifique
-- `GET /api/monuments/unesco` - Monuments classés UNESCO
-- `GET /api/monuments/arrondissement/{arrondissement}` - Monuments par arrondissement
-- `GET /api/monuments/period/{period}` - Monuments par période historique
 
 ### Restaurants
 
@@ -55,10 +50,8 @@ L'API organise les données culturelles en 4 types principaux :
 - `GET /api/restaurants?cuisine_type={type}` - Restaurants filtrés par type de cuisine
 - `GET /api/restaurants?arrondissement={arrondissement}` - Restaurants filtrés par arrondissement
 - `GET /api/restaurants?price_range={range}` - Restaurants filtrés par fourchette de prix
+- `GET /api/restaurants?cuisine_type={type}&price_range={range}` - Combinaison de filtres
 - `GET /api/restaurants/{restaurant_id}` - Détails d'un restaurant spécifique
-- `GET /api/restaurants/cuisine/{cuisine_type}` - Restaurants par type de cuisine
-- `GET /api/restaurants/arrondissement/{arrondissement}` - Restaurants par arrondissement
-- `GET /api/restaurants/price/{price_range}` - Restaurants par fourchette de prix
 
 ### Recherche
 

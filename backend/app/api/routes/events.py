@@ -22,6 +22,12 @@ async def get_events(
 ):
     """
     Récupère les événements avec filtrage optionnel
+    
+    Exemples:
+    - /api/events?category_id=3 : événements de la catégorie 3
+    - /api/events?arrondissement=Lyon%201er : événements dans Lyon 1er
+    - /api/events?upcoming_only=true : événements à venir
+    - /api/events?category_id=3&arrondissement=Lyon%201er : combinaison de filtres
     """
     if category_id is not None:
         return get_events_by_category(category_id)
@@ -46,24 +52,3 @@ async def get_event(event_id: int):
             detail=f"L'événement avec l'ID {event_id} n'a pas été trouvé"
         )
     return event
-
-@router.get("/category/{category_id}", response_model=List[Event])
-async def get_events_for_category(category_id: int):
-    """
-    Récupère tous les événements pour une catégorie spécifique
-    """
-    return get_events_by_category(category_id)
-
-@router.get("/arrondissement/{arrondissement}", response_model=List[Event])
-async def get_events_for_arrondissement(arrondissement: Arrondissement):
-    """
-    Récupère tous les événements pour un arrondissement spécifique
-    """
-    return get_events_by_arrondissement(arrondissement)
-
-@router.get("/upcoming/", response_model=List[Event])
-async def get_upcoming_events_route():
-    """
-    Récupère tous les événements à venir
-    """
-    return get_upcoming_events()

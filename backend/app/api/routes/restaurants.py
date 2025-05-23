@@ -21,6 +21,12 @@ async def get_restaurants(
 ):
     """
     Récupère les restaurants culturels avec filtrage optionnel
+    
+    Exemples:
+    - /api/restaurants?cuisine_type=Cuisine%20lyonnaise : restaurants de cuisine lyonnaise
+    - /api/restaurants?arrondissement=Lyon%202ème : restaurants dans Lyon 2ème
+    - /api/restaurants?price_range=€€ : restaurants dans la fourchette de prix €€
+    - /api/restaurants?cuisine_type=Cuisine%20lyonnaise&price_range=€€ : combinaison de filtres
     """
     if cuisine_type is not None:
         return get_restaurants_by_cuisine(cuisine_type)
@@ -45,24 +51,3 @@ async def get_restaurant(restaurant_id: int):
             detail=f"Le restaurant avec l'ID {restaurant_id} n'a pas été trouvé"
         )
     return restaurant
-
-@router.get("/cuisine/{cuisine_type}", response_model=List[Restaurant])
-async def get_restaurants_by_cuisine_type(cuisine_type: str):
-    """
-    Récupère tous les restaurants pour un type de cuisine spécifique
-    """
-    return get_restaurants_by_cuisine(cuisine_type)
-
-@router.get("/arrondissement/{arrondissement}", response_model=List[Restaurant])
-async def get_restaurants_by_arrondissement_route(arrondissement: Arrondissement):
-    """
-    Récupère tous les restaurants pour un arrondissement spécifique
-    """
-    return get_restaurants_by_arrondissement(arrondissement)
-
-@router.get("/price/{price_range}", response_model=List[Restaurant])
-async def get_restaurants_by_price_range_route(price_range: str):
-    """
-    Récupère tous les restaurants pour une fourchette de prix spécifique
-    """
-    return get_restaurants_by_price_range(price_range)

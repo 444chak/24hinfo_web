@@ -21,6 +21,12 @@ async def get_monuments(
 ):
     """
     Récupère les monuments avec filtrage optionnel
+    
+    Exemples:
+    - /api/monuments?arrondissement=Lyon%204ème : monuments dans Lyon 4ème
+    - /api/monuments?is_unesco=true : monuments classés UNESCO
+    - /api/monuments?historical_period=XIXe%20siècle : monuments du XIXe siècle
+    - /api/monuments?arrondissement=Lyon%204ème&is_unesco=true : combinaison de filtres
     """
     if arrondissement is not None:
         return get_monuments_by_arrondissement(arrondissement)
@@ -45,24 +51,3 @@ async def get_monument(monument_id: int):
             detail=f"Le monument avec l'ID {monument_id} n'a pas été trouvé"
         )
     return monument
-
-@router.get("/unesco/", response_model=List[Monument])
-async def get_unesco_monuments_route():
-    """
-    Récupère tous les monuments classés UNESCO
-    """
-    return get_unesco_monuments()
-
-@router.get("/arrondissement/{arrondissement}", response_model=List[Monument])
-async def get_monuments_for_arrondissement(arrondissement: Arrondissement):
-    """
-    Récupère tous les monuments pour un arrondissement spécifique
-    """
-    return get_monuments_by_arrondissement(arrondissement)
-
-@router.get("/period/{period}", response_model=List[Monument])
-async def get_monuments_for_period(period: str):
-    """
-    Récupère tous les monuments pour une période historique spécifique
-    """
-    return get_monuments_by_period(period)

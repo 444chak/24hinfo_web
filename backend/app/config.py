@@ -1,6 +1,10 @@
-from pydantic_settings import BaseSettings
+import os
+from dotenv import load_dotenv
 
-class Settings(BaseSettings):
+# Charger les variables d'environnement
+load_dotenv()
+
+class Settings:
     """Configuration globale de l'application"""
     APP_NAME: str = "API Culturelle de Lyon"
     API_VERSION: str = "1.0.0"
@@ -13,5 +17,8 @@ class Settings(BaseSettings):
     DB_USER: str = "postgres"
     DB_PASSWORD: str = "postgres"
     DB_NAME: str = "lyon_culture"
+    
+    class Config:
+        env_file = ".env"
 
 settings = Settings()
