@@ -41,7 +41,7 @@ export default function Home() {
   ]);
 
   return (
-    <main className="min-h-screen p-8 relative">
+    <main className="min-h-screen p-20 relative">
       <div
         className={`absolute inset-0 bg-gradient-to-tr ${gradients.main} animate-gradient-x`}
       ></div>
@@ -60,7 +60,7 @@ export default function Home() {
           {items.map((item) => (
             <div
               key={item.id}
-              className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-white w-full hover:bg-black/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] text-center"
+              className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-[height,transform,box-shadow] duration-1000 ease-in-out text-white w-full hover:bg-black/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] text-center h-[150px] hover:h-[300px] hover:z-10"
             >
               <h2 className="text-2xl font-semibold mb-4">{item.name}</h2>
               <p className="text-gray-200 text-lg">{item.description}</p>
