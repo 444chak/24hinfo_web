@@ -1,20 +1,24 @@
 import sqlite3
 from app.db.categories import get_db_connection
+from app.models.base import Coordinates, Contact, Arrondissement
+from datetime import datetime
 
 class CulturalItem:
     def __init__(self, id, category_id, name, description, address, arrondissement, 
-                 latitude, longitude, preview_video, created_at, updated_at):
+                 latitude=None, longitude=None, preview_video=None, created_at=None, updated_at=None):
         self.id = id
         self.category_id = category_id
         self.name = name
         self.description = description
         self.address = address
-        self.arrondissement = arrondissement
-        self.latitude = latitude
-        self.longitude = longitude
+        self.arrondissement = Arrondissement(arrondissement)
+        self.coordinates = Coordinates(latitude=latitude, longitude=longitude) if latitude and longitude else None
+        self.contact = None  # À implémenter si nécessaire
         self.preview_video = preview_video
-        self.created_at = created_at
-        self.updated_at = updated_at
+        self.created_at = created_at or datetime.now()
+        self.updated_at = updated_at or datetime.now()
+        self.opening_hours = []
+        self.images = []
 
 def get_all_cultural_items():
     """Récupère tous les monuments culturels"""
