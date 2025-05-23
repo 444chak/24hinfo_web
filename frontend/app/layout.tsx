@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Lumyons",
   description: "Regardez la culture lyonnaise sous les projecteurs",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

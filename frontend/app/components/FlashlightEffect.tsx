@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Eye, EyeOff } from "lucide-react";
 
 interface FlashlightEffectProps {
   children: React.ReactNode;
@@ -8,6 +9,7 @@ export const FlashlightEffect = ({ children }: FlashlightEffectProps) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [flashlightSize, setFlashlightSize] = useState(175);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isEnabled, setIsEnabled] = useState(true);
   const animationRef = useRef<number>();
 
   const animateFlashlight = (
@@ -86,12 +88,25 @@ export const FlashlightEffect = ({ children }: FlashlightEffectProps) => {
 
   return (
     <>
-      <div
-        className="fixed inset-0 bg-black/65 pointer-events-none z-20"
-        style={{
-          background: `radial-gradient(circle ${flashlightSize}px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.45) 100%)`,
-        }}
-      />
+      <button
+        onClick={() => setIsEnabled(!isEnabled)}
+        className="fixed top-4 right-4 z-30 bg-white/10 hover:bg-white/20 p-2 rounded-full transition-all duration-300"
+        title={isEnabled ? "Désactiver le masque" : "Activer le masque"}
+      >
+        {isEnabled ? (
+          <EyeOff className="w-6 h-6 text-white" />
+        ) : (
+          <Eye className="w-6 h-6 text-white" />
+        )}
+      </button>
+      {isEnabled && (
+        <div
+          className="fixed inset-0 bg-black/65 pointer-events-none z-20"
+          style={{
+            background: `radial-gradient(circle ${flashlightSize}px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.45) 100%)`,
+          }}
+        />
+      )}
       {children}
     </>
   );

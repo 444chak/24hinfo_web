@@ -4,6 +4,7 @@ export const colors = {
   text: {
     primary: "#FFFFFF",
     secondary: "#E5E5E5",
+    tertiary: "#DBAF19",
   },
 } as const;
 
