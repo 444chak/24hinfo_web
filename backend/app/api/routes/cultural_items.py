@@ -5,7 +5,7 @@ from app.db.cultural_items import (
 )
 from fastapi import APIRouter, Query
 
-router = APIRouter(prefix="/cultural_items", tags=["Cultural Items"])
+router = APIRouter(prefix="/cultural-items", tags=["Cultural Items"])
 
 
 @router.get("/", response_model=list[dict])
@@ -21,9 +21,12 @@ async def get_item(item_id: str = Query(..., description="ID of the cultural ite
     """Route pour récupérer un monument culturel par son ID"""
     item = get_cultural_item_by_id(item_id)
     if not item:
-        return {"error": "Item not found"}
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"L'item culturel avec l'ID {item_id} n'a pas été trouvé"
+        )
     return item
-
+  
 
 @router.get("/", response_model=list[dict])
 async def get_items_by_category(

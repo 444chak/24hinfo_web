@@ -11,9 +11,9 @@ class BaseCulturalItem(BaseModel):
     description: str
     address: str
     arrondissement: Arrondissement
-    coordinates: Coordinates
+    coordinates: Optional[Coordinates] = None
     opening_hours: List[OpeningHours] = []
-    contact: Contact
+    contact: Optional[Contact] = None
     images: List[Image] = []
     preview_video: Optional[HttpUrl] = None
     created_at: datetime = datetime.now()

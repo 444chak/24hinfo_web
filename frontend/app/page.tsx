@@ -1,52 +1,34 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import axios from "axios";
-
-interface Item {
-  id: number;
-  name: string;
-  description: string | null;
-}
+import { DynamicIcon } from "lucide-react/dynamic";
+import { colors } from "./theme";
+import { FlashlightEffect } from "./components/FlashlightEffect";
+import { Background } from "./components/Background";
+import { Footer } from "./components/Footer";
+import { eagleLake, outfit } from "./fonts";
+import Categories from "./components/Categories";
 
 export default function Home() {
-  const [items, setItems] = useState<Item[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      try {
-        const response = await axios.get("/api/items");
-        setItems(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError("Failed to fetch items");
-        setLoading(false);
-      }
-    };
-
-    fetchItems();
-  }, []);
-
-  if (loading) return <div className="p-8">Loading...</div>;
-  if (error) return <div className="p-8 text-red-500">{error}</div>;
-
   return (
-    <main className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold mb-8">Next.js + FastAPI Demo</h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {items.map((item) => (
-          <div
-            key={item.id}
-            className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+    <main className={`min-h-screen p-20 relative ${outfit.className}`}>
+      <Background />
+      <FlashlightEffect>
+        <div className="relative z-10">
+          <h1
+            className={`text-5xl font-bold mb-8 ${eagleLake.className} text-center select-none
+              bg-gradient-to-r from-[#DBAF19] to-[#FFD700] bg-clip-text text-transparent
+              [text-shadow:_0_0_15px_#DBAF19]
+              [animation:_pulse_3s_ease-in-out_infinite]`}
           >
-            <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
-            <p className="text-gray-600">{item.description}</p>
-          </div>
-        ))}
-      </div>
+            Lumyons
+          </h1>
+          <p className="text-xl text-center mb-12 text-gray-200 font-medium tracking-wide">
+            Eclaires ta culture de Lyon.
+          </p>
+          <Categories />
+          <Footer />
+        </div>
+      </FlashlightEffect>
     </main>
   );
 }
