@@ -48,7 +48,7 @@ export default function Home() {
       <div
         className="fixed inset-0 bg-black/65 pointer-events-none z-20"
         style={{
-          background: `radial-gradient(circle 175px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.45) 100%)`,
+          background: `radial-gradient(circle 175px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.45) 100%)`,
         }}
       />
       <div className="relative z-10">
@@ -60,7 +60,7 @@ export default function Home() {
           {items.map((item) => (
             <div
               key={item.id}
-              className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-white w-full hover:bg-black/30 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+              className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-white w-full hover:bg-black/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] text-center"
             >
               <h2 className="text-2xl font-semibold mb-4">{item.name}</h2>
               <p className="text-gray-200 text-lg">{item.description}</p>
