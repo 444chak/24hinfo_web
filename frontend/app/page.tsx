@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState, useEffect } from "react";
+import { DynamicIcon } from "lucide-react/dynamic";
+import { colors, gradients } from "./theme";
 
 interface Item {
   id: number;
@@ -10,42 +11,62 @@ interface Item {
 }
 
 export default function Home() {
-  const [items, setItems] = useState<Item[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const fetchItems = async () => {
-      try {
-        const response = await axios.get("/api/items");
-        setItems(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError("Failed to fetch items");
-        setLoading(false);
-      }
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
-    fetchItems();
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  if (loading) return <div className="p-8">Loading...</div>;
-  if (error) return <div className="p-8 text-red-500">{error}</div>;
+  const [items] = useState<Item[]>([
+    {
+      id: 1,
+      name: "Item 1",
+      description: "Description for item 1",
+    },
+    {
+      id: 2,
+      name: "Item 2",
+      description: "Description for item 2",
+    },
+    {
+      id: 3,
+      name: "Item 3",
+      description: "Description for item 3",
+    },
+  ]);
 
   return (
-    <main className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold mb-8">Next.js + FastAPI Demo</h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {items.map((item) => (
-          <div
-            key={item.id}
-            className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
-          >
-            <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
-            <p className="text-gray-600">{item.description}</p>
-          </div>
-        ))}
+    <main className="min-h-screen p-8 relative">
+      <div
+        className={`absolute inset-0 bg-gradient-to-tr ${gradients.main} animate-gradient-x`}
+      ></div>
+      <div
+        className="fixed inset-0 bg-black/65 pointer-events-none z-20"
+        style={{
+          background: `radial-gradient(circle 175px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.45) 100%)`,
+        }}
+      />
+      <div className="relative z-10">
+        <h1 className="text-4xl font-bold mb-8 text-white">
+          Next.js + FastAPI Demo
+        </h1>
+        <DynamicIcon name={"guitar"} color={colors.text.primary} size={32} />
+        <div className="flex flex-col gap-6">
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-shadow text-white w-full"
+            >
+              <h2 className="text-2xl font-semibold mb-4">{item.name}</h2>
+              <p className="text-gray-200 text-lg">{item.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );
