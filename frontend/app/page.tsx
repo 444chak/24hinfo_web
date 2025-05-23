@@ -55,20 +55,31 @@ export default function Home() {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
-    const handleClick = () => {
-      if (!isAnimating) {
-        setIsAnimating(true);
-        // Animation d'agrandissement
-        animateFlashlight(175, 500, 1000);
+    let timeoutId: NodeJS.Timeout;
+    let shrinkTimeoutId: NodeJS.Timeout;
 
-        // Animation de rétrécissement après un délai
-        setTimeout(() => {
-          animateFlashlight(500, 175, 1000);
-          setTimeout(() => {
-            setIsAnimating(false);
-          }, 1000);
-        }, 1000);
+    const handleClick = () => {
+      // Annuler les timeouts précédents s'ils existent
+      if (timeoutId) clearTimeout(timeoutId);
+      if (shrinkTimeoutId) clearTimeout(shrinkTimeoutId);
+
+      // Annuler l'animation en cours si elle existe
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+        animationRef.current = undefined;
       }
+
+      setIsAnimating(true);
+      // Animation d'agrandissement
+      animateFlashlight(175, 500, 1000);
+
+      // Animation de rétrécissement après un délai
+      timeoutId = setTimeout(() => {
+        animateFlashlight(500, 175, 1000);
+        shrinkTimeoutId = setTimeout(() => {
+          setIsAnimating(false);
+        }, 1000);
+      }, 1000);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -79,6 +90,8 @@ export default function Home() {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }
+      if (timeoutId) clearTimeout(timeoutId);
+      if (shrinkTimeoutId) clearTimeout(shrinkTimeoutId);
     };
   }, []);
 
