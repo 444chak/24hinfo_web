@@ -37,8 +37,19 @@ export default function Categories() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-[200px]">
-        Loading...
+      <div className="flex flex-col gap-6">
+        {[1, 2, 3].map((index) => (
+          <div
+            key={index}
+            className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md w-full h-[150px] relative overflow-hidden"
+          >
+            <div className="flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-white/10 animate-pulse mr-4" />
+              <div className="h-8 w-32 bg-white/10 rounded animate-pulse" />
+            </div>
+            <div className="h-6 w-3/4 mx-auto bg-white/10 rounded animate-pulse" />
+          </div>
+        ))}
       </div>
     );
   }
