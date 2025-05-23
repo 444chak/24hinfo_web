@@ -1,0 +1,48 @@
+🎶 Thème : Musique à Lyon
+🏛️ Lieux emblématiques de la musique à Lyon
+Nom	Adresse	Genre principal	Particularité
+Opéra National de Lyon	1 Place de la Comédie, 69001	Classique, opéra, ballet	Direction artistique innovante, rénové par Jean Nouvel
+Auditorium-Orchestre National de Lyon	149 Rue Garibaldi, 69003	Musique symphonique, jazz	Acoustique exceptionnelle, lieu de prestige
+Le Transbordeur	3 Bd Stalingrad, 69100 Villeurbanne	Musiques actuelles (rock, électro, rap)	Grande salle (1800 places), programmation internationale
+L’Épicerie Moderne	Place René Lescot, 69320 Feyzin	Indé, électro, rock	Soutien aux artistes émergents
+Marché Gare	34 Rue Casimir Périer, 69002	Rock, hip-hop, électro, world	Salle underground très active
+Ninkasi Gerland / Kao	267 Rue Marcel Mérieux, 69007	Varié (rap, funk, jazz, techno)	Lieu hybride bar/resto/concerts
+Le Périscope	13 Rue Delandine, 69002	Jazz, musiques expérimentales	Résidences et projets artistiques alternatifs
+
+🎤 Artistes emblématiques originaires de Lyon
+Nom	Genre	Particularité
+Jean-Michel Jarre	Musique électronique	Pionnier mondial du synthé, show monumental à Lyon (1986)
+Benjamin Biolay	Chanson pop	Texte poétique et orchestration classe
+Vitaa	Pop urbaine / R&B	Connue en solo et avec Slimane
+André Manoukian	Jazz	Figure médiatique et promoteur du jazz en France
+
+🌌 Artistes émergents / scène actuelle
+Nom	Genre	Notes
+Menace Santana	Drill / Trap	Membre influent de la scène drill fr, originaire des Minguettes
+So La Lune	Rap mélodique / Cloud rap	Flow lunaire, voix autotunée identifiable, textes sensibles
+Lyonzon (collectif)	Trap / Plugg	Composé de Ashe 22, Kpri, Bushi, etc. Scène très active et influente
+Sasso	Rap / Trap	Série Enfant2larue, disque d’or, star montante lyonnaise
+Thaïs Lona	Neo-soul / RnB	Chanteuse montante sur la scène alternative
+Perséide	Rock alternatif	Groupe lyonnais avec une grosse présence scénique
+Eliott Jane, Vannye, Trio SR9, Animali	Pop, électro, classique moderne	Variété et éclectisme musical fort à Lyon
+
+🎉 Festivals musicaux majeurs
+Nom	Période	Style	Particularité
+Nuits de Fourvière	Juin à août	Tous styles (pop, rock, opéra...)	Dans le Théâtre antique de Fourvière
+Nuits Sonores	Mai/Juin	Électro, indé	Référence européenne des festivals électroniques
+Woodstower	Août	Rap, électro, écologie	Festi engagé au Grand Parc Miribel
+Reperkusound	Printemps	Techno, dubstep, bass music	Festival indoor, très énergique
+Jazz à Vienne	Juin-Juillet	Jazz & musiques du monde	À 30min de Lyon, mais culte et international
+
+🚀 Initiatives de soutien aux jeunes talents
+Nom	Description
+Scènes Découvertes (Ville de Lyon)	Réseau de salles pour la création émergente (musique, théâtre, etc.)
+Scènes d’Émergence Musicale (Villeurbanne)	Programme d'accompagnement pour jeunes groupes en développement
+Kiwi Festival	Tremplin musical avec concerts live à la Fête de la Musique
+
+🧠 Contexte historique et influence
+Scène baroque importante au XVIIIe siècle (salons privés, églises).
+
+Explosion rock/punk dans les années 70–80 (Rock’n’Roll Mops, Wolnitza).
+
+Aujourd’hui, Lyon est un berceau du rap français indépendant et un bastion électronique avec un public fidèle et curieux.
