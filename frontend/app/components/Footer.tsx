@@ -1,12 +1,24 @@
 import { smooch } from "../fonts";
-import { Heart } from "lucide-react";
+import { Heart, Github } from "lucide-react";
 import { colors } from "../theme";
 
 export const Footer = () => {
   return (
     <footer className="mt-20 text-center">
       <p className="text-m text-center text-gray-200 font-medium tracking-wide">
-        <a href="/about">A propos</a>
+        <a href="/about" className="hover:text-white transition-colors">
+          A propos
+        </a>
+        {" • "}
+        <a
+          href="https://github.com/444chak/24hinfo_web"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition-colors inline-flex items-center gap-1"
+        >
+          <Github className="w-4 h-4" />
+          GitHub
+        </a>
       </p>
       <br />
       <p className={`${smooch.className} text-2xl text-white/80 select-none`}>
