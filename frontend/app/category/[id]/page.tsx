@@ -7,6 +7,7 @@ import { Background } from "../../components/Background";
 import { FlashlightEffect } from "../../components/FlashlightEffect";
 import { Modal } from "../../components/Modal";
 import { Footer } from "../../components/Footer";
+import { motion } from "framer-motion";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
@@ -104,33 +105,59 @@ export default function CategoryPage() {
     <div className="min-h-screen relative">
       <Background />
       <FlashlightEffect isEnabled={isMaskEnabled}>
-        <div className="container mx-auto px-4 py-8 relative z-10">
-          <button
+        <motion.div
+          className="container mx-auto px-4 py-8 relative z-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <motion.button
             onClick={() => router.back()}
             className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors mb-8 group"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             Retour
-          </button>
+          </motion.button>
 
-          <h1 className="text-4xl font-bold mb-8 text-white bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <motion.h1
+            className="text-4xl font-bold mb-8 text-white bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             {categoryName}
-          </h1>
+          </motion.h1>
 
-          <div className="text-gray-400 mb-6">
+          <motion.div
+            className="text-gray-400 mb-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             {items.length} {items.length === 1 ? "élément" : "éléments"} dans
             cette catégorie
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {items.map((item) => (
-              <div
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            {items.map((item, index) => (
+              <motion.div
                 key={item.id}
                 onClick={() => {
                   setSelectedItem(item);
                   setIsMaskEnabled(false);
                 }}
                 className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6 cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
               >
                 {item.images && (
                   <div className="aspect-video w-full bg-black/40 rounded-lg mb-4 overflow-hidden">
@@ -158,9 +185,9 @@ export default function CategoryPage() {
                     </a>
                   )}
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           <Modal
             isOpen={selectedItem !== null}
@@ -170,7 +197,12 @@ export default function CategoryPage() {
             }}
           >
             {selectedItem && (
-              <div className="text-white">
+              <motion.div
+                className="text-white"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h2 className="text-3xl font-bold mb-4">{selectedItem.name}</h2>
                 {selectedItem.images && (
                   <div className="aspect-video w-full bg-black/40 rounded-lg mb-6 overflow-hidden">
@@ -196,12 +228,12 @@ export default function CategoryPage() {
                     </a>
                   )}
                 </div>
-              </div>
+              </motion.div>
             )}
           </Modal>
 
           <Footer />
-        </div>
+        </motion.div>
       </FlashlightEffect>
     </div>
   );
