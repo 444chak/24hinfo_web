@@ -10,7 +10,7 @@ import { Footer } from "../../components/Footer";
 import { motion } from "framer-motion";
 
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://lumyons.chkb.fr/api";
+  process.env.NEXT_PUBLIC_API_URL || "https://lumyons.chkb.fr/api";
 
 interface CulturalItem {
   id: number;
