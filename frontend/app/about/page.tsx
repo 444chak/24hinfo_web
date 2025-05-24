@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 py-8 relative z-10">
           <motion.button
             onClick={() => router.back()}
-            className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors mb-8 group"
+            className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors mb-8 group ml-16"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -51,8 +51,8 @@ export default function AboutPage() {
             Ce site propose une expérience interactive autour de la découverte
             de différentes cultures lyonaises. Naviguez à travers les pages pour
             explorer, apprendre et interagir avec les fonctionnalités proposées.
-            L’interface met l’accent sur l’accessibilité, l’animation et la
-            simplicité d’utilisation pour offrir une navigation agréable et
+            L'interface met l'accent sur l'accessibilité, l'animation et la
+            simplicité d'utilisation pour offrir une navigation agréable et
             intuitive.
             <br />
             Nous avons pensé à vos yeux à 6h00 du matin, en intégrant un mode

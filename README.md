@@ -1,8 +1,18 @@
-# Next.js + FastAPI Project
+# Lumyons - Mettre en Lumière la Ville de Lyon
 
-Ce projet est une application web moderne construite avec Next.js pour le frontend et FastAPI pour le backend.
+Une application web moderne qui met en valeur la beauté et le dynamisme de la ville de Lyon, construite avec Next.js pour le frontend et FastAPI pour le backend.
 
-## Technologies Utilisées
+## 🌟 Fonctionnalités Principales
+
+- 🏛️ Présentation des monuments et lieux emblématiques
+- 🎭 Agenda culturel et événements
+- 📸 Galerie photos des plus beaux endroits
+- 🗺️ Cartographie interactive des points d'intérêt
+- 🍽️ Guide des restaurants et commerces
+- 🏨 Informations touristiques et pratiques
+- 📱 Version mobile responsive
+
+## 🛠️ Technologies Utilisées
 
 ### Frontend
 
@@ -10,26 +20,50 @@ Ce projet est une application web moderne construite avec Next.js pour le fronte
 - TypeScript
 - Tailwind CSS
 - PostCSS
+- Shadcn/ui (Composants UI)
+- React Query (Gestion des données)
+- Zustand (Gestion d'état)
+- Mapbox GL (Cartographie interactive)
 
 ### Backend
 
 - FastAPI (Framework Python)
 - Uvicorn (Serveur ASGI)
+- SQLAlchemy (ORM)
+- PostgreSQL (Base de données)
+- Redis (Cache)
+- Celery (Tâches asynchrones)
 
-## Structure du Projet
+## 📁 Structure du Projet
 
 ```
 .
-├── frontend/          # Application Next.js
-│   ├── app/          # Pages et routes de l'application
-│   ├── components/   # Composants React réutilisables
-│   └── public/       # Fichiers statiques
-└── backend/          # Application FastAPI
-    ├── main.py       # Point d'entrée de l'API
-    └── requirements.txt # Dépendances Python
+├── frontend/                 # Application Next.js
+│   ├── app/                 # Pages et routes de l'application
+│   ├── components/          # Composants React réutilisables
+│   ├── lib/                 # Utilitaires et configurations
+│   ├── public/              # Fichiers statiques
+│   └── styles/              # Styles globaux
+└── backend/                 # Application FastAPI
+    ├── app/                 # Code source principal
+    │   ├── api/            # Points d'entrée API
+    │   ├── core/           # Configuration et utilitaires
+    │   ├── models/         # Modèles de données
+    │   └── services/       # Logique métier
+    ├── alembic/            # Migrations de base de données
+    └── tests/              # Tests unitaires et d'intégration
 ```
 
-## Configuration du Frontend
+## 🚀 Installation
+
+### Prérequis
+
+- Node.js 18+
+- Python 3.9+
+- PostgreSQL 14+
+- Redis
+
+### Configuration du Frontend
 
 1. Naviguez vers le dossier frontend :
 
@@ -43,15 +77,21 @@ cd frontend
 npm install
 ```
 
-3. Lancez le serveur de développement :
+3. Configurez les variables d'environnement :
+
+```bash
+cp .env.example .env.local
+```
+
+4. Lancez le serveur de développement :
 
 ```bash
 npm run dev
 ```
 
-Le frontend sera accessible à l'adresse <http://localhost:3000>
+Le frontend sera accessible à l'adresse [http://localhost:3000](http://localhost:3000)
 
-## Configuration du Backend
+### Configuration du Backend
 
 1. Naviguez vers le dossier backend :
 
@@ -85,26 +125,70 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. Lancez le serveur de développement :
+5. Configurez les variables d'environnement :
 
 ```bash
-uvicorn main:app --reload
+cp .env.example .env
 ```
 
-L'API backend sera accessible à l'adresse <http://localhost:8000>
-La documentation de l'API sera disponible à <http://localhost:8000/docs>
+6. Initialisez la base de données :
 
-## Fonctionnalités
+```bash
+alembic upgrade head
+```
 
-- Interface utilisateur moderne et réactive
-- API RESTful avec documentation automatique
-- Support TypeScript pour un développement plus robuste
-- Styling avec Tailwind CSS pour un design responsive
+7. Lancez le serveur de développement :
 
-## Contribution
+```bash
+uvicorn app.main:app --reload
+```
+
+L'API backend sera accessible à l'adresse [http://localhost:8000](http://localhost:8000)
+La documentation de l'API sera disponible à [http://localhost:8000/docs](http://localhost:8000/docs)
+
+## 🧪 Tests
+
+### Frontend
+
+```bash
+cd frontend
+npm run test
+```
+
+### Backend
+
+```bash
+cd backend
+pytest
+```
+
+## 📝 Documentation
+
+- [Documentation API](http://localhost:8000/docs)
+- [Guide de Contribution](./CONTRIBUTING.md)
+- [Changelog](./CHANGELOG.md)
+
+## 🤝 Contribution
 
 1. Fork le projet
 2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
 3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
 5. Ouvrez une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## 📞 Support
+
+Pour toute question ou problème, veuillez :
+
+- Ouvrir une issue sur GitHub
+- Contacter l'équipe de support à <support@lumyons.fr>
+
+## 🙏 Remerciements
+
+- La Ville de Lyon pour son soutien
+- Tous les contributeurs qui ont participé au projet
+- La communauté open source pour les outils et bibliothèques utilisés

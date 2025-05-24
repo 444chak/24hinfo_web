@@ -114,7 +114,7 @@ export default function CategoryPage() {
         >
           <motion.button
             onClick={() => router.back()}
-            className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors mb-8 group"
+            className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors mb-8 group ml-16"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
