@@ -103,11 +103,7 @@ export const FlashlightEffect = ({
           <Eye className="w-6 h-6 text-white" />
         )}
       </button>
-      <MousePointerClick
-        className="w-6 h-6 text-white"
-        // @ts-expect-error: SVG component n'accepte pas 'title' en prop, mais c'est utile pour l'accessibilité
-        title="Click gauche pour éclairer plus !"
-      />
+      <MousePointerClick className="fixed top-4 right-4 z-30 w-6 h-6 text-white" />
       {isEnabled && isEnabledLocal && (
         <div
           className="fixed inset-0 bg-black/65 pointer-events-none z-20"
