@@ -11,7 +11,9 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className={`min-h-screen p-20 relative ${outfit.className}`}>
+    <main
+      className={`min-h-screen p-4 sm:p-8 md:p-12 lg:p-20 relative ${outfit.className}`}
+    >
       <Background />
       <FlashlightEffect>
         <motion.div
