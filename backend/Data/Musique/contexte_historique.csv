@@ -1,6 +1,0 @@
-id,category_id,name,description,period,type,created_at,updated_at
-1,4,"Musique classique","Histoire de la musique classique à Lyon",XIXe siècle,Historique,2025-05-24T00:46:16.330687,2025-05-24T00:46:16.330720
-2,4,"Jazz","Histoire du jazz à Lyon",XXe siècle,Historique,2025-05-24T00:46:16.330752,2025-05-24T00:46:16.330754
-3,4,"Rock","Histoire du rock à Lyon",XXe siècle,Historique,2025-05-24T00:46:16.330763,2025-05-24T00:46:16.330764
-4,4,"Électronique","Histoire de la musique électronique à Lyon",XXIe siècle,Historique,2025-05-24T00:46:16.330770,2025-05-24T00:46:16.330770
-5,4,"Pop","Histoire de la pop à Lyon",XXe siècle,Historique,2025-05-24T00:46:16.330779,2025-05-24T00:46:16.330780

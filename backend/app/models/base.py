@@ -18,8 +18,8 @@ class Arrondissement(str, Enum):
 
 class Coordinates(BaseModel):
     """Coordonnées géographiques"""
-    latitude: float
-    longitude: float
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
 
 class OpeningHours(BaseModel):
     """Horaires d'ouverture"""

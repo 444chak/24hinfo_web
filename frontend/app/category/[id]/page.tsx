@@ -14,12 +14,11 @@ interface CulturalItem {
   id: number;
   name: string;
   description: string;
-  image_url: string;
+  images: string;
+  gmaps: string;
   category_id: number;
-  coordinates?: {
-    latitude: number;
-    longitude: number;
-  };
+  address: string;
+  arrondissement: string;
 }
 
 export default function CategoryPage() {
@@ -129,16 +128,23 @@ export default function CategoryPage() {
                 onClick={() => setSelectedItem(item)}
                 className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6 cursor-pointer"
               >
+                {item.images && (
+                  <div className="aspect-video w-full bg-black/40 rounded-lg mb-4 overflow-hidden">
+                    <img
+                      src={item.images}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <h2 className="text-xl font-semibold text-white mb-3">
                   {item.name}
                 </h2>
                 <p className="text-gray-300 mb-4">{item.description}</p>
                 <div className="text-sm text-gray-400">
-                  <p>ID: {item.id}</p>
-                  <p>Catégorie ID: {item.category_id}</p>
-                  {item.coordinates && (
+                  {item.gmaps && (
                     <a
-                      href={`https://www.google.com/maps?q=${item.coordinates.latitude},${item.coordinates.longitude}`}
+                      href={item.gmaps}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block"
@@ -159,24 +165,22 @@ export default function CategoryPage() {
             {selectedItem && (
               <div className="text-white">
                 <h2 className="text-3xl font-bold mb-4">{selectedItem.name}</h2>
-                <div className="aspect-video w-full bg-black/40 rounded-lg mb-6 overflow-hidden">
-                  {selectedItem.image_url && (
+                {selectedItem.images && (
+                  <div className="aspect-video w-full bg-black/40 rounded-lg mb-6 overflow-hidden">
                     <img
-                      src={selectedItem.image_url}
+                      src={selectedItem.images}
                       alt={selectedItem.name}
                       className="w-full h-full object-cover"
                     />
-                  )}
-                </div>
+                  </div>
+                )}
                 <p className="text-lg text-gray-300 mb-6">
                   {selectedItem.description}
                 </p>
                 <div className="text-sm text-gray-400">
-                  <p>ID: {selectedItem.id}</p>
-                  <p>Catégorie ID: {selectedItem.category_id}</p>
-                  {selectedItem.coordinates && (
+                  {selectedItem.gmaps && (
                     <a
-                      href={`https://www.google.com/maps?q=${selectedItem.coordinates.latitude},${selectedItem.coordinates.longitude}`}
+                      href={selectedItem.gmaps}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block"
