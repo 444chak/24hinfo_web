@@ -103,7 +103,7 @@ export const FlashlightEffect = ({
           <Eye className="w-6 h-6 text-white" />
         )}
       </button>
-      <button className="group fixed top-17 right-4 z-30 bg-white/10 hover:bg-white/20 p-2 rounded-full transition-all duration-300">
+      <button className="group fixed top-4 left-4 z-30 bg-white/10 hover:bg-white/20 p-2 rounded-full transition-all duration-300">
         <MousePointerClick className="w-6 h-6 text-white" />
         <span className="absolute right-14 top-1/2 -translate-y-1/2 bg-black/80 text-white text-xs px-3 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
           Clique pour agrandir la lumière
