@@ -14,16 +14,7 @@ services:
     networks:
       - app-network
     depends_on:
-      backend:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "wget", "--spider", "http://localhost:3005"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    labels:
-      - "com.example.description=Frontend Next.js application"
-      - "com.example.service=web"
+      - backend
 
   backend:
     build:
@@ -38,16 +29,7 @@ services:
       - HOST=0.0.0.0
     networks:
       - app-network
-    healthcheck:
-      test: ["CMD", "wget", "--spider", "http://localhost:8001/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    labels:
-      - "com.example.description=Backend Node.js application"
-      - "com.example.service=backend"
 
 networks:
   app-network:
     driver: bridge
-    name: 24hinfo_network
