@@ -65,16 +65,16 @@ export default function Categories() {
   }
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-8 sm:gap-6">
       {categories.map((category) => (
         <div
           key={category.id}
-          className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-[height,transform,box-shadow] duration-1000 ease-in-out text-white w-full hover:bg-black/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] text-center h-[150px] hover:h-[200px] hover:z-10 relative group cursor-pointer"
+          className="p-6 sm:p-8 bg-black/20 sm:backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-[height,transform,box-shadow] duration-1000 ease-in-out text-white w-full hover:bg-black/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] text-center h-[140px] sm:h-[150px] hover:h-[200px] hover:z-10 relative group cursor-pointer"
           onClick={() => handleCategoryClick(category.id)}
         >
           <div className="flex items-center justify-center mb-4">
             <div
-              className="w-12 h-12 rounded-full flex items-center justify-center mr-4"
+              className="w-14 h-14 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mr-4"
               style={{ backgroundColor: category.primary }}
             >
               {/* @ts-ignore */}

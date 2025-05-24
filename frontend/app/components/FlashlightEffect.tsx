@@ -16,6 +16,14 @@ export const FlashlightEffect = ({
   const [isEnabledLocal, setIsEnabledLocal] = useState(true);
   const animationRef = useRef<number>();
 
+  useEffect(() => {
+    // Détecter si l'appareil est mobile
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      setIsEnabledLocal(false);
+    }
+  }, []);
+
   const animateFlashlight = (
     startSize: number,
     endSize: number,
