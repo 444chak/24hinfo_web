@@ -1,6 +1,6 @@
 # Lumyons - Mettre en Lumière la Ville de Lyon
 
-Une application web moderne qui met en valeur la beauté et le dynamisme de la ville de Lyon, construite avec Next.js pour le frontend et FastAPI pour le backend.
+Une application web moderne qui met en valeur la beauté et le dynamisme de la ville de Lyon, construite avec Next.js pour le frontend et FastAPI pour le backend. Ce projet a été développé dans le cadre des 24h de l'informatique des IUT 2025.
 
 ## 🌟 Fonctionnalités Principales
 
@@ -179,16 +179,3 @@ pytest
 ## 📄 Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## 📞 Support
-
-Pour toute question ou problème, veuillez :
-
-- Ouvrir une issue sur GitHub
-- Contacter l'équipe de support à <support@lumyons.fr>
-
-## 🙏 Remerciements
-
-- La Ville de Lyon pour son soutien
-- Tous les contributeurs qui ont participé au projet
-- La communauté open source pour les outils et bibliothèques utilisés
