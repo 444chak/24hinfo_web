@@ -12,6 +12,10 @@ interface CulturalItem {
   description: string;
   image_url: string;
   category_id: number;
+  coordinates?: {
+    latitude: number;
+    longitude: number;
+  };
 }
 
 export default function CategoryPage() {
@@ -122,6 +126,16 @@ export default function CategoryPage() {
               <div className="text-sm text-gray-400">
                 <p>ID: {item.id}</p>
                 <p>Catégorie ID: {item.category_id}</p>
+                {item.coordinates && (
+                  <a
+                    href={`https://www.google.com/maps?q=${item.coordinates.latitude},${item.coordinates.longitude}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block"
+                  >
+                    Voir sur Google Maps
+                  </a>
+                )}
               </div>
             </div>
           ))}
