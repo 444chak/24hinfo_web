@@ -1,7 +1,6 @@
-Musee;Nom_Exposition;Date_Debut;Date_Fin;Description
-"Musée d'Art Contemporain de Lyon (MAC Lyon)";"Échos du passé, promesses du futur";"";"13/07/2025";"Exploration de la nature sublimée par le numérique à travers les œuvres de quinze artistes"
-"Musée d'Art Contemporain de Lyon (MAC Lyon)";"Univers Programmés";"";"13/07/2025";"Examen de l'évolution des pratiques artistiques avec le développement des technologies de l'information"
-"Musée des Beaux-Arts de Lyon";"Zurbarán. Réinventer un chef-d'œuvre";"";"";"Exposition réunissant pour la première fois trois tableaux de Zurbarán représentant Saint François d'Assise"
-"Musée des Beaux-Arts de Lyon";"L'invention du passé";"";"";"Première exposition depuis plus de quarante ans consacrée au courant artistique du XIXe siècle, avec des œuvres de Dominique Ingres, Paul Delaroche et autres"
-"Musée des Confluences";"Le Temps d'un rêve";"";"";"Exposition multidisciplinaire explorant le monde des rêves à travers les neurosciences, l'ethnographie, les arts et la psychanalyse"
-"";"Van Gogh, l'expérience immersive";"";"";"Spectacle son et lumière sur plus de 1 000 m², avec des projections des œuvres les plus fascinantes de l'artiste, accompagnées d'une expérience en réalité virtuelle"
+id,category_id,name,description,venue_id,start_date,end_date,price_range,contact_telephone,contact_email,contact_website,type,capacity,accessibility,amenities,created_at,updated_at
+1,2,"Exposition Picasso","Rétrospective des œuvres de Picasso","1","2025-06-15","2025-09-15","10-15€",04 72 10 17 40,,http://www.mba-lyon.fr,"Exposition",500,"Accès PMR; Ascenseur","Café; Restaurant; Boutique; Visites guidées",2025-05-24T00:46:16.330687,2025-05-24T00:46:16.330720
+2,2,"Art Contemporain","Exposition d'art contemporain","2","2025-07-01","2025-08-31","8-12€",04 72 69 17 17,,http://www.mac-lyon.com,"Exposition",300,"Accès PMR; Ascenseur","Café; Restaurant; Boutique; Visites guidées",2025-05-24T00:46:16.330752,2025-05-24T00:46:16.330754
+3,2,"Sciences et Sociétés","Exposition sur les sciences et les sociétés","3","2025-09-01","2025-12-31","9-14€",04 28 38 12 12,,http://www.museedesconfluences.fr,"Exposition",400,"Accès PMR; Ascenseur","Café; Restaurant; Boutique; Visites guidées",2025-05-24T00:46:16.330763,2025-05-24T00:46:16.330764
+4,2,"Art Moderne","Exposition d'art moderne","4","2025-10-01","2025-12-31","7-10€",04 78 03 47 00,,http://www.i-ac.eu,"Exposition",200,"Accès PMR; Ascenseur","Bibliothèque; Visites guidées",2025-05-24T00:46:16.330770,2025-05-24T00:46:16.330770
+5,2,"Photographie","Exposition de photographie","5","2025-11-01","2026-01-31","5-8€",04 78 39 09 26,,http://www.galerie-reverbere.com,"Exposition",150,"Accès PMR","Visites guidées",2025-05-24T00:46:16.330779,2025-05-24T00:46:16.330780

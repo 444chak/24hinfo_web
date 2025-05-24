@@ -1,34 +1,140 @@
-# Organisation des données culturelles de Lyon
+# Structure des données
 
-## Structure des fichiers CSV
+Ce dossier contient les fichiers de données au format CSV pour l'application 24hinfo. Tous les fichiers suivent une structure standardisée pour assurer la cohérence des données.
 
-### Musique
-- **lieux_emblematiques.csv**: Lieux culturels dédiés à la musique à Lyon
-  - *Colonnes*: Nom, Adresse, Code_Postal, Ville, Genre_principal, Particularite
-- **artistes.csv**: Artistes lyonnais emblématiques et émergents
-  - *Colonnes*: Nom, Genre, Particularite, Type (Emblématique/Émergent)
-- **festivals.csv**: Festivals musicaux à Lyon et alentours
-  - *Colonnes*: Nom, Periode, Style, Particularite
-- **initiatives_soutien.csv**: Organisations de soutien aux artistes émergents
-  - *Colonnes*: Nom, Description
-- **contexte_historique.csv**: Contexte historique musical lyonnais
-  - *Colonnes*: Periode, Description
+## Structure standardisée
 
-### Arts
-- **lieux_emblematiques.csv**: Musées et lieux d'exposition à Lyon
-  - *Colonnes*: Nom, Adresse, Code_Postal, Type_Musee, Historique, Collections, Particularite
-- **expositions.csv**: Expositions récentes et à venir
-  - *Colonnes*: Musee, Nom_Exposition, Date_Debut, Date_Fin, Description
+Tous les fichiers CSV doivent suivre cette structure de base :
 
-### Spectacle
-- **lieux_emblematiques.csv**: Lieux dédiés aux spectacles vivants
-  - *Colonnes*: Nom, Adresse, Code_Postal, Ville, Type, Historique, Capacite
-- **evenements.csv**: Événements et spectacles notables
-  - *Colonnes*: Lieu, Nom_Evenement, Date, Type, Description
+### Champs obligatoires
 
-## Notes d'utilisation
-- Tous les fichiers sont encodés en UTF-8 pour prendre en charge les caractères accentués
-- Le séparateur utilisé dans les CSV est le point-virgule (;)
-- Les champs de texte contenant des points-virgules ou des virgules sont entourés de guillemets doubles
-- Les dates sont au format JJ/MM/AAAA lorsque disponibles
-- Certains champs peuvent être vides lorsque l'information n'est pas disponible
+- `id` : Identifiant unique (entier)
+- `name` : Nom du lieu/événement (texte)
+- `description` : Description détaillée (texte)
+- `category_id` : ID de la catégorie (entier, référence à categories.csv)
+- `address` : Adresse complète (texte)
+- `arrondissement` : Arrondissement de Lyon (texte)
+- `latitude` : Coordonnée géographique (nombre décimal)
+- `longitude` : Coordonnée géographique (nombre décimal)
+- `created_at` : Date de création (timestamp ISO 8601)
+- `updated_at` : Date de dernière modification (timestamp ISO 8601)
+
+### Champs optionnels
+
+- `contact_telephone` : Numéro de téléphone (texte)
+- `contact_email` : Adresse email (texte)
+- `contact_website` : Site web (URL)
+- `accessibility` : Informations sur l'accessibilité (texte)
+- `amenities` : Équipements et services disponibles (texte, séparés par des points-virgules)
+
+## Fichiers de données
+
+### categories.csv
+
+Contient les catégories principales avec les champs spécifiques :
+
+- `icon` : Icône associée (texte)
+- `primary` : Couleur principale (code hexadécimal)
+
+### monuments_lyon.csv
+
+Contient les monuments historiques avec les champs spécifiques :
+
+- `built_year` : Année de construction (entier)
+- `architectural_style` : Style architectural (texte)
+- `historical_period` : Période historique (texte)
+- `is_unesco` : Patrimoine UNESCO (booléen)
+
+### musees_lyon.csv
+
+Contient les musées et lieux culturels avec les champs spécifiques :
+
+- `founded_year` : Année de création (entier)
+- `accessibility` : Informations sur l'accessibilité (texte)
+- `amenities` : Équipements et services (texte)
+
+### bibliotheques_lyon.csv
+
+Contient les bibliothèques et lieux de lecture avec les champs spécifiques :
+
+- `founded_year` : Année de création (entier, optionnel)
+- `accessibility` : Informations sur l'accessibilité (texte, ex: "Accès PMR; Ascenseur")
+- `amenities` : Équipements et services (texte, ex: "Café; Collections numériques; Scanner")
+
+### lieux_emblematiques.csv (Spectacle/Musique/Arts)
+
+Contient les lieux culturels spécifiques à chaque catégorie avec les champs spécifiques :
+
+- `type` : Type de lieu (texte, ex: "Théâtre", "Opéra", "Salle de concert")
+- `capacity` : Capacité d'accueil (entier)
+- `historical_info` : Informations historiques (texte)
+- `accessibility` : Informations sur l'accessibilité (texte)
+- `amenities` : Équipements et services (texte)
+
+### evenements.csv (Spectacle)
+
+Contient les événements de spectacle avec les champs spécifiques :
+
+- `venue_id` : ID du lieu (entier, référence à lieux_emblematiques.csv)
+- `start_date` : Date de début (timestamp ISO 8601)
+- `end_date` : Date de fin (timestamp ISO 8601)
+- `type` : Type d'événement (texte)
+- `price_range` : Fourchette de prix (texte)
+- `accessibility` : Informations sur l'accessibilité (texte)
+
+### festivals.csv (Musique)
+
+Contient les festivals musicaux avec les champs spécifiques :
+
+- `venue_id` : ID du lieu (entier, référence à lieux_emblematiques.csv)
+- `start_date` : Date de début (timestamp ISO 8601)
+- `end_date` : Date de fin (timestamp ISO 8601)
+- `genre` : Genre musical principal (texte)
+- `price_range` : Fourchette de prix (texte)
+- `accessibility` : Informations sur l'accessibilité (texte)
+
+### expositions.csv (Arts)
+
+Contient les expositions avec les champs spécifiques :
+
+- `venue_id` : ID du lieu (entier, référence à lieux_emblematiques.csv)
+- `start_date` : Date de début (timestamp ISO 8601)
+- `end_date` : Date de fin (timestamp ISO 8601)
+- `artistic_movement` : Mouvement artistique (texte)
+- `price_range` : Fourchette de prix (texte)
+- `accessibility` : Informations sur l'accessibilité (texte)
+
+### artistes.csv (Musique)
+
+Contient les artistes musicaux avec les champs spécifiques :
+
+- `genre` : Genre musical (texte)
+- `type` : Type d'artiste (texte, ex: "Emblématique", "Émergent")
+- `particularity` : Particularités (texte)
+- `website` : Site web (URL)
+- `social_media` : Réseaux sociaux (texte, séparés par des points-virgules)
+
+### initiatives_soutien.csv (Musique)
+
+Contient les initiatives de soutien aux artistes avec les champs spécifiques :
+
+- `type` : Type d'initiative (texte)
+- `description` : Description détaillée (texte)
+- `website` : Site web (URL)
+- `contact_info` : Informations de contact (texte)
+
+### contexte_historique.csv (Musique)
+
+Contient le contexte historique musical avec les champs spécifiques :
+
+- `period` : Période historique (texte)
+- `description` : Description détaillée (texte)
+- `key_events` : Événements clés (texte, séparés par des points-virgules)
+
+## Format des données
+
+- Les dates sont au format ISO 8601 : YYYY-MM-DDThh:mm:ss.ssssss
+- Les coordonnées géographiques sont en degrés décimaux
+- Les booléens sont représentés par "True" ou "False"
+- Les listes sont séparées par des points-virgules
+- Les textes contenant des virgules sont entourés de guillemets doubles

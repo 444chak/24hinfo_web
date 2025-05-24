@@ -1,4 +1,6 @@
-Nom;Description
-"Scènes Découvertes (Ville de Lyon)";"Réseau de salles pour la création émergente (musique, théâtre, etc.)"
-"Scènes d'Émergence Musicale (Villeurbanne)";"Programme d'accompagnement pour jeunes groupes en développement"
-"Kiwi Festival";"Tremplin musical avec concerts live à la Fête de la Musique"
+id,category_id,name,description,type,contact_telephone,contact_email,contact_website,created_at,updated_at
+1,4,"SMAC","Scène de Musiques Actuelles",Centre culturel,04 72 38 09 09,,http://www.smac-lyon.fr,2025-05-24T00:46:16.330687,2025-05-24T00:46:16.330720
+2,4,"Conservatoire","Conservatoire à Rayonnement Régional",École de musique,04 72 38 09 09,,http://www.conservatoire-lyon.fr,2025-05-24T00:46:16.330752,2025-05-24T00:46:16.330754
+3,4,"Rock School","École de rock",École de musique,04 72 38 09 09,,http://www.rockschool-lyon.fr,2025-05-24T00:46:16.330763,2025-05-24T00:46:16.330764
+4,4,"Jazz School","École de jazz",École de musique,04 72 38 09 09,,http://www.jazzschool-lyon.fr,2025-05-24T00:46:16.330770,2025-05-24T00:46:16.330770
+5,4,"Music School","École de musique",École de musique,04 72 38 09 09,,http://www.musicschool-lyon.fr,2025-05-24T00:46:16.330779,2025-05-24T00:46:16.330780

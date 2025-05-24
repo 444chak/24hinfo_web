@@ -1,4 +1,9 @@
-Nom;Genre;Particularite;Type
+id,category_id,name,description,genre,contact_telephone,contact_email,contact_website,type,created_at,updated_at
+1,4,"Daft Punk","Duo de musique électronique français",Électronique,04 72 38 09 09,,http://www.daftpunk.com,"Groupe",2025-05-24T00:46:16.330687,2025-05-24T00:46:16.330720
+2,4,"Woodkid","Artiste musical et réalisateur",Pop,04 72 38 09 09,,http://www.woodkid.com,"Artiste solo",2025-05-24T00:46:16.330752,2025-05-24T00:46:16.330754
+3,4,"M83","Groupe de musique électronique",Électronique,04 72 38 09 09,,http://www.m83.fr,"Groupe",2025-05-24T00:46:16.330763,2025-05-24T00:46:16.330764
+4,4,"Stromae","Auteur-compositeur-interprète",Pop,04 72 38 09 09,,http://www.stromae.net,"Artiste solo",2025-05-24T00:46:16.330770,2025-05-24T00:46:16.330770
+5,4,"Air","Duo de musique électronique",Électronique,04 72 38 09 09,,http://www.airfrenchband.com,"Groupe",2025-05-24T00:46:16.330779,2025-05-24T00:46:16.330780
 "Jean-Michel Jarre";"Musique électronique";"Pionnier mondial du synthé, show monumental à Lyon (1986)";"Emblématique"
 "Benjamin Biolay";"Chanson pop";"Texte poétique et orchestration classe";"Emblématique"
 "Vitaa";"Pop urbaine / R&B";"Connue en solo et avec Slimane";"Emblématique"

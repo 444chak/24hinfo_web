@@ -1,6 +1,6 @@
-Nom;Periode;Style;Particularite
-"Nuits de Fourvière";"Juin à août";"Tous styles (pop, rock, opéra...)";"Dans le Théâtre antique de Fourvière"
-"Nuits Sonores";"Mai/Juin";"Électro, indé";"Référence européenne des festivals électroniques"
-"Woodstower";"Août";"Rap, électro, écologie";"Festi engagé au Grand Parc Miribel"
-"Reperkusound";"Printemps";"Techno, dubstep, bass music";"Festival indoor, très énergique"
-"Jazz à Vienne";"Juin-Juillet";"Jazz & musiques du monde";"À 30min de Lyon, mais culte et international"
+id,category_id,name,description,venue_id,start_date,end_date,price_range,contact_telephone,contact_email,contact_website,type,capacity,accessibility,amenities,created_at,updated_at
+1,4,"Festival Jazz à Vienne","Festival international de jazz","1","2025-06-28","2025-07-13","25-90€",04 74 78 28 28,,http://www.jazzavienne.com,"Festival",2500,"Accès PMR; Ascenseur","Café; Restaurant; Boutique",2025-05-24T00:46:16.330687,2025-05-24T00:46:16.330720
+2,4,"Les Nuits Sonores","Festival de musiques électroniques","2","2025-05-17","2025-05-21","30-120€",04 72 38 09 09,,http://www.nuits-sonores.com,"Festival",5000,"Accès PMR; Ascenseur","Café; Restaurant; Boutique",2025-05-24T00:46:16.330752,2025-05-24T00:46:16.330754
+3,4,"Festival Les Détours de Babel","Festival de musiques du monde","3","2025-03-15","2025-03-30","15-40€",04 76 51 21 82,,http://www.lesdetoursdebabel.fr,"Festival",1000,"Accès PMR; Ascenseur","Café; Restaurant; Boutique",2025-05-24T00:46:16.330763,2025-05-24T00:46:16.330764
+4,4,"Festival Les Escales","Festival de musiques actuelles","4","2025-07-01","2025-07-05","20-60€",04 72 38 09 09,,http://www.lesescales.fr,"Festival",3000,"Accès PMR; Ascenseur","Café; Restaurant; Boutique",2025-05-24T00:46:16.330770,2025-05-24T00:46:16.330770
+5,4,"Festival Les Nuits de Fourvière","Festival de musiques et spectacles","5","2025-06-01","2025-07-31","20-80€",04 72 38 09 09,,http://www.nuitsdefourviere.com,"Festival",3000,"Accès PMR; Ascenseur","Café; Restaurant; Boutique",2025-05-24T00:46:16.330779,2025-05-24T00:46:16.330780

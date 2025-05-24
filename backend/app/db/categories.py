@@ -48,3 +48,24 @@ def get_category_by_id(category_id: int):
         icon=category_data['icon'],
         primary="#3B82F6"  # Couleur bleue par défaut
     )
+
+def delete_category(category_id: int):
+    """Supprime une catégorie et tous ses éléments associés"""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    
+    try:
+        # Supprimer d'abord tous les éléments culturels associés à cette catégorie
+        cursor.execute("DELETE FROM cultural_items WHERE category_id = ?", (category_id,))
+        
+        # Ensuite supprimer la catégorie
+        cursor.execute("DELETE FROM categories WHERE id = ?", (category_id,))
+        
+        conn.commit()
+        return True
+    except Exception as e:
+        conn.rollback()
+        print(f"Erreur lors de la suppression de la catégorie: {e}")
+        return False
+    finally:
+        conn.close()

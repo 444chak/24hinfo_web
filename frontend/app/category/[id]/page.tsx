@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+
 interface CulturalItem {
   id: number;
-  title: string;
+  name: string;
   description: string;
   image_url: string;
   category_id: number;
@@ -24,17 +26,26 @@ export default function CategoryPage() {
     const fetchCategoryAndItems = async () => {
       try {
         // Fetch category details
-        const categoryResponse = await fetch(`/api/categories/${params.id}`);
-        if (!categoryResponse.ok) throw new Error("Failed to fetch category");
+        const categoryResponse = await fetch(
+          `${API_BASE_URL}/api/categories/${params.id}`
+        );
+        if (!categoryResponse.ok) {
+          const errorData = await categoryResponse.json().catch(() => null);
+          throw new Error(errorData?.detail || "Failed to fetch category");
+        }
         const categoryData = await categoryResponse.json();
         setCategoryName(categoryData.name);
 
         // Fetch cultural items for this category
         const itemsResponse = await fetch(
-          `/api/cultural-items?category_id=${params.id}`
+          `${API_BASE_URL}/api/cultural-items/category/${params.id}`
         );
-        if (!itemsResponse.ok)
-          throw new Error("Failed to fetch cultural items");
+        if (!itemsResponse.ok) {
+          const errorData = await itemsResponse.json().catch(() => null);
+          throw new Error(
+            errorData?.detail || "Failed to fetch cultural items"
+          );
+        }
         const itemsData = await itemsResponse.json();
         setItems(itemsData);
       } catch (err) {
@@ -93,24 +104,24 @@ export default function CategoryPage() {
           {categoryName}
         </h1>
 
+        <div className="text-gray-400 mb-6">
+          {items.length} {items.length === 1 ? "élément" : "éléments"} dans
+          cette catégorie
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item) => (
             <div
               key={item.id}
-              className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6"
             >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={item.image_url}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h2 className="text-xl font-semibold text-white mb-3">
-                  {item.title}
-                </h2>
-                <p className="text-gray-300 line-clamp-3">{item.description}</p>
+              <h2 className="text-xl font-semibold text-white mb-3">
+                {item.name}
+              </h2>
+              <p className="text-gray-300 mb-4">{item.description}</p>
+              <div className="text-sm text-gray-400">
+                <p>ID: {item.id}</p>
+                <p>Catégorie ID: {item.category_id}</p>
               </div>
             </div>
           ))}
