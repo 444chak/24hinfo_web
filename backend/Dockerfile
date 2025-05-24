@@ -31,8 +31,9 @@ RUN useradd -m -u 1000 appuser
 # Copy only necessary files from builder
 COPY --from=builder /app/requirements.txt .
 COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
-COPY --from=builder /app/src ./src
-COPY --from=builder /app/config ./config
+COPY --from=builder /app/main.py .
+COPY --from=builder /app/app ./app
+COPY --from=builder /app/Data ./Data
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
@@ -51,4 +52,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://localhost:8000/health || exit 1
 
 # Start the application
-CMD ["python", "src/main.py"] 
+CMD ["python", "main.py"] 
