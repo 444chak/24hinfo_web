@@ -29,6 +29,7 @@ export default function CategoryPage() {
   const [error, setError] = useState<string | null>(null);
   const [categoryName, setCategoryName] = useState<string>("");
   const [selectedItem, setSelectedItem] = useState<CulturalItem | null>(null);
+  const [isMaskEnabled, setIsMaskEnabled] = useState(true);
 
   useEffect(() => {
     const fetchCategoryAndItems = async () => {
@@ -102,7 +103,7 @@ export default function CategoryPage() {
   return (
     <div className="min-h-screen relative">
       <Background />
-      <FlashlightEffect>
+      <FlashlightEffect isEnabled={isMaskEnabled}>
         <div className="container mx-auto px-4 py-8 relative z-10">
           <button
             onClick={() => router.back()}
@@ -125,7 +126,10 @@ export default function CategoryPage() {
             {items.map((item) => (
               <div
                 key={item.id}
-                onClick={() => setSelectedItem(item)}
+                onClick={() => {
+                  setSelectedItem(item);
+                  setIsMaskEnabled(false);
+                }}
                 className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6 cursor-pointer"
               >
                 {item.images && (
@@ -160,7 +164,10 @@ export default function CategoryPage() {
 
           <Modal
             isOpen={selectedItem !== null}
-            onClose={() => setSelectedItem(null)}
+            onClose={() => {
+              setSelectedItem(null);
+              setIsMaskEnabled(true);
+            }}
           >
             {selectedItem && (
               <div className="text-white">

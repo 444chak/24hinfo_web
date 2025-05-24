@@ -3,13 +3,17 @@ import { Eye, EyeOff } from "lucide-react";
 
 interface FlashlightEffectProps {
   children: React.ReactNode;
+  isEnabled?: boolean;
 }
 
-export const FlashlightEffect = ({ children }: FlashlightEffectProps) => {
+export const FlashlightEffect = ({
+  children,
+  isEnabled = true,
+}: FlashlightEffectProps) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [flashlightSize, setFlashlightSize] = useState(175);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [isEnabled, setIsEnabled] = useState(true);
+  const [isEnabledLocal, setIsEnabledLocal] = useState(true);
   const animationRef = useRef<number>();
 
   const animateFlashlight = (
@@ -89,17 +93,17 @@ export const FlashlightEffect = ({ children }: FlashlightEffectProps) => {
   return (
     <>
       <button
-        onClick={() => setIsEnabled(!isEnabled)}
+        onClick={() => setIsEnabledLocal(!isEnabledLocal)}
         className="fixed top-4 right-4 z-30 bg-white/10 hover:bg-white/20 p-2 rounded-full transition-all duration-300"
-        title={isEnabled ? "Désactiver le masque" : "Activer le masque"}
+        title={isEnabledLocal ? "Désactiver le masque" : "Activer le masque"}
       >
-        {isEnabled ? (
+        {isEnabledLocal ? (
           <EyeOff className="w-6 h-6 text-white" />
         ) : (
           <Eye className="w-6 h-6 text-white" />
         )}
       </button>
-      {isEnabled && (
+      {isEnabled && isEnabledLocal && (
         <div
           className="fixed inset-0 bg-black/65 pointer-events-none z-20"
           style={{
