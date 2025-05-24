@@ -10,11 +10,20 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_API_URL=/api
+      - NEXT_PUBLIC_API_URL=http://backend:8000
     networks:
       - app-network
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    labels:
+      - "com.example.description=Frontend Next.js application"
+      - "com.example.service=web"
 
   backend:
     build:
@@ -25,9 +34,20 @@ services:
       - "8000:8000"
     environment:
       - NODE_ENV=production
+      - PORT=8000
+      - HOST=0.0.0.0
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    labels:
+      - "com.example.description=Backend Node.js application"
+      - "com.example.service=backend"
 
 networks:
   app-network:
     driver: bridge
+    name: 24hinfo_network

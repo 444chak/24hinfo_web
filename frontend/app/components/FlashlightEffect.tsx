@@ -103,7 +103,13 @@ export const FlashlightEffect = ({
           <Eye className="w-6 h-6 text-white" />
         )}
       </button>
-      <MousePointerClick className="fixed top-4 right-4 z-30 w-6 h-6 text-white" />
+      <button
+        onClick={() => setIsEnabledLocal(!isEnabledLocal)}
+        className="fixed top-20 right-4 z-30 bg-white/10 hover:bg-white/20 p-2 rounded-full transition-all duration-300"
+        title="Click gauche pour agrandir la lumière"
+      >
+        <MousePointerClick className="w-6 h-6 text-white" />
+      </button>
       {isEnabled && isEnabledLocal && (
         <div
           className="fixed inset-0 bg-black/65 pointer-events-none z-20"
