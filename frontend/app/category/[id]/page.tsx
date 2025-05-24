@@ -38,7 +38,7 @@ export default function CategoryPage() {
       try {
         // Fetch category details
         const categoryResponse = await fetch(
-          `${API_BASE_URL}/api/categories/${params.id}`
+          `${API_BASE_URL}/categories/${params.id}`
         );
         if (!categoryResponse.ok) {
           const errorData = await categoryResponse.json().catch(() => null);
