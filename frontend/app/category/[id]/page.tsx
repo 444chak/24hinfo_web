@@ -49,7 +49,7 @@ export default function CategoryPage() {
 
         // Fetch cultural items for this category
         const itemsResponse = await fetch(
-          `${API_BASE_URL}/api/cultural-items/category/${params.id}`
+          `${API_BASE_URL}/cultural-items/category/${params.id}`
         );
         if (!itemsResponse.ok) {
           const errorData = await itemsResponse.json().catch(() => null);
