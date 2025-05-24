@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from app.api.routes import categories, cultural_items
 
 # Créer un routeur API principal
-api_router = APIRouter(prefix="/api")
+api_router = APIRouter()
 
 # Inclure tous les sous-routeurs
 api_router.include_router(categories.router)
