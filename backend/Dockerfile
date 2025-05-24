@@ -38,18 +38,18 @@ COPY --from=builder /app/Data ./Data
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
-ENV PORT=8000
+ENV PORT=8001
 ENV HOST=0.0.0.0
 
 # Switch to non-root user
 USER appuser
 
 # Expose port
-EXPOSE 8000
+EXPOSE 8001
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://localhost:8000/health || exit 1
+    CMD wget --no-verbose --tries=1 --spider http://localhost:8001/health || exit 1
 
 # Start the application
 CMD ["python", "main.py"] 
