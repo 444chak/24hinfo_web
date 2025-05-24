@@ -24,7 +24,7 @@ def get_all_categories():
             name=category_data['name'],
             description=category_data['description'],
             icon=category_data['icon'],
-            primary="#3B82F6"  # Couleur bleue par défaut
+            primary="#DBAF19"  # Couleur bleue par défaut
         )
         categories.append(category)
     
