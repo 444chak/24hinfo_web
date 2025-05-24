@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, MousePointerClick } from "lucide-react";
 
 interface FlashlightEffectProps {
   children: React.ReactNode;
@@ -103,6 +103,11 @@ export const FlashlightEffect = ({
           <Eye className="w-6 h-6 text-white" />
         )}
       </button>
+      <MousePointerClick
+        className="w-6 h-6 text-white"
+        // @ts-expect-error: SVG component n'accepte pas 'title' en prop, mais c'est utile pour l'accessibilité
+        title="Click gauche pour éclairer plus !"
+      />
       {isEnabled && isEnabledLocal && (
         <div
           className="fixed inset-0 bg-black/65 pointer-events-none z-20"
