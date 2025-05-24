@@ -1,0 +1,2324 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "name": "Bibliothèque municipale de la Part-Dieu",
+    "description": "Espace culturel dédié à la promotion de la lecture et de l'écriture contemporaine.",
+    "address": "71 rue de la Paix, 1er Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.757555,
+      "longitude": 4.827894
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.535910",
+    "updated_at": "2025-05-24T00:46:46.535941",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "name": "Bibliothèque du 1er arrondissement",
+    "description": "Médiathèque proposant livres, revues, CD, DVD et accès internet gratuit.",
+    "address": "104 rue Paul Bert, 7ème Lyon",
+    "arrondissement": "Lyon 7ème",
+    "coordinates": {
+      "latitude": 45.739506,
+      "longitude": 4.830906
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.535965",
+    "updated_at": "2025-05-24T00:46:46.535967",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "name": "Bibliothèque du 2ème arrondissement",
+    "description": "Espace de lecture et de culture proposant collections physiques et numériques. Spécialisé en littérature française et internationale.",
+    "address": "69 rue de la République, 7ème Lyon",
+    "arrondissement": "Lyon 7ème",
+    "coordinates": {
+      "latitude": 45.73919,
+      "longitude": 4.833467
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.535982",
+    "updated_at": "2025-05-24T00:46:46.535982",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 4,
+    "category_id": 1,
+    "name": "Bibliothèque du 3ème arrondissement",
+    "description": "Centre de documentation spécialisé avec fonds patrimoniaux et collections contemporaines.",
+    "address": "58 rue des Martyrs, 7ème Lyon",
+    "arrondissement": "Lyon 7ème",
+    "coordinates": {
+      "latitude": 45.74509,
+      "longitude": 4.845283
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.535993",
+    "updated_at": "2025-05-24T00:46:46.535994",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 5,
+    "category_id": 1,
+    "name": "Bibliothèque du 4ème arrondissement - Saint-Jean",
+    "description": "Bibliothèque moderne avec espaces de travail, collections jeunesse et ressources numériques.",
+    "address": "104 rue Mercière, 5ème Lyon",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.755192,
+      "longitude": 4.817937
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536007",
+    "updated_at": "2025-05-24T00:46:46.536008",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 6,
+    "category_id": 1,
+    "name": "Bibliothèque du 5ème arrondissement - Point du Jour",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "43 rue Victor Hugo, 1er Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.762396,
+      "longitude": 4.82844
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536018",
+    "updated_at": "2025-05-24T00:46:46.536019",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 7,
+    "category_id": 1,
+    "name": "Bibliothèque du 6ème arrondissement",
+    "description": "Bibliothèque moderne avec espaces de travail, collections jeunesse et ressources numériques.",
+    "address": "17 rue des Martyrs, 4ème Lyon",
+    "arrondissement": "Lyon 4ème",
+    "coordinates": {
+      "latitude": 45.765984,
+      "longitude": 4.826049
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536029",
+    "updated_at": "2025-05-24T00:46:46.536030",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 8,
+    "category_id": 1,
+    "name": "Bibliothèque du 7ème arrondissement - Jean Macé",
+    "description": "Centre de documentation spécialisé avec fonds patrimoniaux et collections contemporaines.",
+    "address": "57 rue Mercière, 2ème Lyon",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.752757,
+      "longitude": 4.833204
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536042",
+    "updated_at": "2025-05-24T00:46:46.536043",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 9,
+    "category_id": 1,
+    "name": "Bibliothèque du 8ème arrondissement - Bachut",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "45 rue de la Paix, 5ème Lyon",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.761696,
+      "longitude": 4.815082
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536057",
+    "updated_at": "2025-05-24T00:46:46.536057",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 10,
+    "category_id": 1,
+    "name": "Bibliothèque du 9ème arrondissement - Vaise",
+    "description": "Centre de documentation spécialisé avec fonds patrimoniaux et collections contemporaines.",
+    "address": "100 rue des Martyrs, 5ème Lyon",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.762622,
+      "longitude": 4.818212
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536066",
+    "updated_at": "2025-05-24T00:46:46.536067",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 11,
+    "category_id": 1,
+    "name": "Médiathèque de Vaise",
+    "description": "Centre de documentation spécialisé avec fonds patrimoniaux et collections contemporaines.",
+    "address": "108 rue de la République, 6ème Lyon",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.770757,
+      "longitude": 4.857585
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536077",
+    "updated_at": "2025-05-24T00:46:46.536077",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 12,
+    "category_id": 1,
+    "name": "Bibliothèque Gerland",
+    "description": "Médiathèque proposant livres, revues, CD, DVD et accès internet gratuit.",
+    "address": "27 rue Paul Bert, 9ème Lyon",
+    "arrondissement": "Lyon 9ème",
+    "coordinates": {
+      "latitude": 45.776273,
+      "longitude": 4.791227
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536087",
+    "updated_at": "2025-05-24T00:46:46.536087",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 13,
+    "category_id": 1,
+    "name": "Bibliothèque de la Croix-Rousse",
+    "description": "Médiathèque proposant livres, revues, CD, DVD et accès internet gratuit.",
+    "address": "54 rue de la Paix, 4ème Lyon",
+    "arrondissement": "Lyon 4ème",
+    "coordinates": {
+      "latitude": 45.766286,
+      "longitude": 4.827553
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536096",
+    "updated_at": "2025-05-24T00:46:46.536097",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 14,
+    "category_id": 1,
+    "name": "Bibliothèque Saint-Paul",
+    "description": "Espace de lecture et de culture proposant collections physiques et numériques. Spécialisé en littérature française et internationale.",
+    "address": "127 rue Paul Bert, 9ème Lyon",
+    "arrondissement": "Lyon 9ème",
+    "coordinates": {
+      "latitude": 45.774329,
+      "longitude": 4.800336
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536105",
+    "updated_at": "2025-05-24T00:46:46.536106",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 15,
+    "category_id": 1,
+    "name": "Bibliothèque Lacassagne",
+    "description": "Espace de lecture et de culture proposant collections physiques et numériques. Spécialisé en littérature française et internationale.",
+    "address": "139 rue Paul Bert, 6ème Lyon",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.779738,
+      "longitude": 4.844234
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536115",
+    "updated_at": "2025-05-24T00:46:46.536116",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 16,
+    "category_id": 1,
+    "name": "Librairie Passages",
+    "description": "Espace culturel dédié à la promotion de la lecture et de l'écriture contemporaine.",
+    "address": "139 rue Franklin, 4ème Lyon",
+    "arrondissement": "Lyon 4ème",
+    "coordinates": {
+      "latitude": 45.780143,
+      "longitude": 4.821629
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536125",
+    "updated_at": "2025-05-24T00:46:46.536126",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 17,
+    "category_id": 1,
+    "name": "Librairie Decitre Bellecour",
+    "description": "Centre de documentation spécialisé avec fonds patrimoniaux et collections contemporaines.",
+    "address": "33 rue de la République, 1er Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.768486,
+      "longitude": 4.828565
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536133",
+    "updated_at": "2025-05-24T00:46:46.536134",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 18,
+    "category_id": 1,
+    "name": "Librairie Ombres Blanches Lyon",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "103 rue Paul Bert, 9ème Lyon",
+    "arrondissement": "Lyon 9ème",
+    "coordinates": {
+      "latitude": 45.788295,
+      "longitude": 4.806219
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536142",
+    "updated_at": "2025-05-24T00:46:46.536143",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 19,
+    "category_id": 1,
+    "name": "Café littéraire Le Polar",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "101 rue Franklin, 2ème Lyon",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.751894,
+      "longitude": 4.839315
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536155",
+    "updated_at": "2025-05-24T00:46:46.536156",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 20,
+    "category_id": 1,
+    "name": "Salon de thé La Page",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "25 rue Paul Bert, 1er Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.771433,
+      "longitude": 4.830641
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536165",
+    "updated_at": "2025-05-24T00:46:46.536166",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 21,
+    "category_id": 1,
+    "name": "Espace culturel Leclerc",
+    "description": "Espace culturel dédié à la promotion de la lecture et de l'écriture contemporaine.",
+    "address": "95 rue de la République, 9ème Lyon",
+    "arrondissement": "Lyon 9ème",
+    "coordinates": {
+      "latitude": 45.779204,
+      "longitude": 4.798226
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536173",
+    "updated_at": "2025-05-24T00:46:46.536173",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 22,
+    "category_id": 1,
+    "name": "Librairie spécialisée BD",
+    "description": "Espace de lecture et de culture proposant collections physiques et numériques. Spécialisé en littérature française et internationale.",
+    "address": "83 rue Victor Hugo, 4ème Lyon",
+    "arrondissement": "Lyon 4ème",
+    "coordinates": {
+      "latitude": 45.773417,
+      "longitude": 4.829731
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536182",
+    "updated_at": "2025-05-24T00:46:46.536182",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 23,
+    "category_id": 1,
+    "name": "Centre de documentation Marie Curie",
+    "description": "Médiathèque proposant livres, revues, CD, DVD et accès internet gratuit.",
+    "address": "107 rue Paul Bert, 7ème Lyon",
+    "arrondissement": "Lyon 7ème",
+    "coordinates": {
+      "latitude": 45.738847,
+      "longitude": 4.84682
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536193",
+    "updated_at": "2025-05-24T00:46:46.536193",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 24,
+    "category_id": 1,
+    "name": "Bibliothèque associative Gerland",
+    "description": "Espace culturel dédié à la promotion de la lecture et de l'écriture contemporaine.",
+    "address": "24 rue Paul Bert, 8ème Lyon",
+    "arrondissement": "Lyon 8ème",
+    "coordinates": {
+      "latitude": 45.727918,
+      "longitude": 4.862118
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536203",
+    "updated_at": "2025-05-24T00:46:46.536203",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 25,
+    "category_id": 1,
+    "name": "Médiathèque interculturelle",
+    "description": "Bibliothèque moderne avec espaces de travail, collections jeunesse et ressources numériques.",
+    "address": "16 rue de la République, 8ème Lyon",
+    "arrondissement": "Lyon 8ème",
+    "coordinates": {
+      "latitude": 45.732839,
+      "longitude": 4.8501
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536213",
+    "updated_at": "2025-05-24T00:46:46.536213",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 26,
+    "category_id": 1,
+    "name": "Espace lecture senior",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "106 rue de la Paix, 8ème Lyon",
+    "arrondissement": "Lyon 8ème",
+    "coordinates": {
+      "latitude": 45.723601,
+      "longitude": 4.857483
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536221",
+    "updated_at": "2025-05-24T00:46:46.536222",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 27,
+    "category_id": 1,
+    "name": "Point lecture enfants",
+    "description": "Bibliothèque moderne avec espaces de travail, collections jeunesse et ressources numériques.",
+    "address": "127 rue Franklin, 6ème Lyon",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.771119,
+      "longitude": 4.844957
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536230",
+    "updated_at": "2025-05-24T00:46:46.536231",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 28,
+    "category_id": 1,
+    "name": "Centre de ressources numériques",
+    "description": "Centre culturel et littéraire offrant un large choix d'ouvrages, animations et ateliers d'écriture.",
+    "address": "60 rue Garibaldi, 7ème Lyon",
+    "arrondissement": "Lyon 7ème",
+    "coordinates": {
+      "latitude": 45.745852,
+      "longitude": 4.841901
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536238",
+    "updated_at": "2025-05-24T00:46:46.536239",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 29,
+    "category_id": 1,
+    "name": "Bibliothèque universitaire Lyon 2",
+    "description": "Espace de lecture et de culture proposant collections physiques et numériques. Spécialisé en littérature française et internationale.",
+    "address": "12 rue Victor Hugo, 5ème Lyon",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.768903,
+      "longitude": 4.822822
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536251",
+    "updated_at": "2025-05-24T00:46:46.536251",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 30,
+    "category_id": 1,
+    "name": "BU Sciences",
+    "description": "Espace culturel dédié à la promotion de la lecture et de l'écriture contemporaine.",
+    "address": "55 rue des Martyrs, 3ème Lyon",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.757593,
+      "longitude": 4.843742
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536260",
+    "updated_at": "2025-05-24T00:46:46.536260",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 31,
+    "category_id": 1,
+    "name": "Médiathèque Montchat",
+    "description": "Espace culturel dédié à la promotion de la lecture et de l'écriture contemporaine.",
+    "address": "26 rue Franklin, 7ème Lyon",
+    "arrondissement": "Lyon 7ème",
+    "coordinates": {
+      "latitude": 45.749162,
+      "longitude": 4.836425
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536268",
+    "updated_at": "2025-05-24T00:46:46.536269",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 32,
+    "category_id": 1,
+    "name": "Bibliothèque Moncey",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "41 rue de la République, 2ème Lyon",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.744682,
+      "longitude": 4.841627
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536277",
+    "updated_at": "2025-05-24T00:46:46.536277",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 33,
+    "category_id": 1,
+    "name": "Espace culturel Monplaisir",
+    "description": "Bibliothèque moderne avec espaces de travail, collections jeunesse et ressources numériques.",
+    "address": "121 rue Mercière, 1er Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.760043,
+      "longitude": 4.834579
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536286",
+    "updated_at": "2025-05-24T00:46:46.536286",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 34,
+    "category_id": 1,
+    "name": "Centre de documentation sociale",
+    "description": "Centre culturel et littéraire offrant un large choix d'ouvrages, animations et ateliers d'écriture.",
+    "address": "25 rue Paul Bert, 9ème Lyon",
+    "arrondissement": "Lyon 9ème",
+    "coordinates": {
+      "latitude": 45.772852,
+      "longitude": 4.807597
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536295",
+    "updated_at": "2025-05-24T00:46:46.536296",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 35,
+    "category_id": 1,
+    "name": "Bibliothèque spécialisée médecine",
+    "description": "Bibliothèque moderne avec espaces de travail, collections jeunesse et ressources numériques.",
+    "address": "9 rue Franklin, 6ème Lyon",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.77355,
+      "longitude": 4.841644
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536306",
+    "updated_at": "2025-05-24T00:46:46.536307",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 36,
+    "category_id": 1,
+    "name": "Médiathèque Rillieux",
+    "description": "Centre culturel et littéraire offrant un large choix d'ouvrages, animations et ateliers d'écriture.",
+    "address": "109 rue Victor Hugo, 5ème Lyon",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.757621,
+      "longitude": 4.814769
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536315",
+    "updated_at": "2025-05-24T00:46:46.536316",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 37,
+    "category_id": 1,
+    "name": "Bibliothèque Caluire",
+    "description": "Lieu de rencontre autour du livre, proposant lectures publiques, clubs de lecture et événements littéraires.",
+    "address": "10 rue des Martyrs, 6ème Lyon",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.770121,
+      "longitude": 4.849793
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536324",
+    "updated_at": "2025-05-24T00:46:46.536325",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 38,
+    "category_id": 1,
+    "name": "Centre culturel Oullins",
+    "description": "Centre de documentation spécialisé avec fonds patrimoniaux et collections contemporaines.",
+    "address": "13 rue de la Paix, 1er Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.757081,
+      "longitude": 4.836802
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536332",
+    "updated_at": "2025-05-24T00:46:46.536333",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 39,
+    "category_id": 1,
+    "name": "Bibliothèque Bron",
+    "description": "Espace culturel dédié à la promotion de la lecture et de l'écriture contemporaine.",
+    "address": "28 rue Victor Hugo, 8ème Lyon",
+    "arrondissement": "Lyon 8ème",
+    "coordinates": {
+      "latitude": 45.720921,
+      "longitude": 4.864654
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536341",
+    "updated_at": "2025-05-24T00:46:46.536342",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 40,
+    "category_id": 1,
+    "name": "Médiathèque Villeurbanne",
+    "description": "Centre culturel et littéraire offrant un large choix d'ouvrages, animations et ateliers d'écriture.",
+    "address": "77 rue Victor Hugo, 5ème Lyon",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.758726,
+      "longitude": 4.810625
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536351",
+    "updated_at": "2025-05-24T00:46:46.536352",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 41,
+    "category_id": 1,
+    "name": "Espace lecture Décines",
+    "description": "Médiathèque proposant livres, revues, CD, DVD et accès internet gratuit.",
+    "address": "148 rue Franklin, 8ème Lyon",
+    "arrondissement": "Lyon 8ème",
+    "coordinates": {
+      "latitude": 45.726367,
+      "longitude": 4.868673
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:46.536359",
+    "updated_at": "2025-05-24T00:46:46.536360",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 201,
+    "category_id": 3,
+    "name": "Basilique Notre-Dame de Fourvière",
+    "description": "Monument classé offrant un témoignage exceptionnel de l'art de bâtir éclectique.",
+    "address": "8 place de Fourvière, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.759259,
+      "longitude": 4.823514
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330687",
+    "updated_at": "2025-05-24T00:46:16.330720",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 202,
+    "category_id": 3,
+    "name": "Théâtre Gallo-Romain de Fourvière",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "17 rue Cleberg, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.768853,
+      "longitude": 4.814151
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330752",
+    "updated_at": "2025-05-24T00:46:16.330754",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 203,
+    "category_id": 3,
+    "name": "Cathédrale Saint-Jean-Baptiste",
+    "description": "Monument classé offrant un témoignage exceptionnel de l'art de bâtir gothique et roman.",
+    "address": "Place Saint-Jean, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.754929,
+      "longitude": 4.826301
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330763",
+    "updated_at": "2025-05-24T00:46:16.330764",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 204,
+    "category_id": 3,
+    "name": "Opéra de Lyon",
+    "description": "Édifice patrimonial de style Contemporain, témoignage architectural de la période XXe siècle.",
+    "address": "Place de la Comédie, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.754083,
+      "longitude": 4.840341
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330770",
+    "updated_at": "2025-05-24T00:46:16.330770",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 205,
+    "category_id": 3,
+    "name": "Hôtel de Ville de Lyon",
+    "description": "Monument classé offrant un témoignage exceptionnel de l'art de bâtir classique français.",
+    "address": "1 place de la Comédie, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.768587,
+      "longitude": 4.83255
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330779",
+    "updated_at": "2025-05-24T00:46:16.330780",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 206,
+    "category_id": 3,
+    "name": "Traboules du Vieux Lyon",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "Vieux Lyon, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.762038,
+      "longitude": 4.811783
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330788",
+    "updated_at": "2025-05-24T00:46:16.330789",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 207,
+    "category_id": 3,
+    "name": "Église Saint-Nizier",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "Place Saint-Nizier, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.754494,
+      "longitude": 4.825404
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330798",
+    "updated_at": "2025-05-24T00:46:16.330799",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 208,
+    "category_id": 3,
+    "name": "Église Saint-Paul",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture roman et gothique.",
+    "address": "Place Gerson, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.763879,
+      "longitude": 4.816584
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330807",
+    "updated_at": "2025-05-24T00:46:16.330807",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 209,
+    "category_id": 3,
+    "name": "Église Saint-Bonaventure",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "Place des Cordeliers, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.748761,
+      "longitude": 4.827008
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330816",
+    "updated_at": "2025-05-24T00:46:16.330817",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 210,
+    "category_id": 3,
+    "name": "Église Saint-Georges",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture néo-gothique.",
+    "address": "Place Saint-Georges, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.755957,
+      "longitude": 4.811579
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330825",
+    "updated_at": "2025-05-24T00:46:16.330826",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 211,
+    "category_id": 3,
+    "name": "Temple du Change",
+    "description": "Édifice patrimonial de style Classique, témoignage architectural de la période XVIIe siècle.",
+    "address": "Rue de la Loge, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.751066,
+      "longitude": 4.831735
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330833",
+    "updated_at": "2025-05-24T00:46:16.330834",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 212,
+    "category_id": 3,
+    "name": "Église Sainte-Croix",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine xviiie siècle lyonnais.",
+    "address": "Rue Sainte-Croix, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.763941,
+      "longitude": 4.825832
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330839",
+    "updated_at": "2025-05-24T00:46:16.330840",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 213,
+    "category_id": 3,
+    "name": "Tour Rose",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture renaissance.",
+    "address": "Rue du Bœuf, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.755132,
+      "longitude": 4.815137
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330848",
+    "updated_at": "2025-05-24T00:46:16.330849",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 214,
+    "category_id": 3,
+    "name": "Maison des Avocats",
+    "description": "Édifice patrimonial de style Renaissance, témoignage architectural de la période Renaissance.",
+    "address": "Place du Change, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.759242,
+      "longitude": 4.82947
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330855",
+    "updated_at": "2025-05-24T00:46:16.330856",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 215,
+    "category_id": 3,
+    "name": "Hôtel de Gadagne",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture renaissance.",
+    "address": "Place du Petit Collège, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.759029,
+      "longitude": 4.811667
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330865",
+    "updated_at": "2025-05-24T00:46:16.330865",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 216,
+    "category_id": 3,
+    "name": "Palais de Justice",
+    "description": "Monument classé offrant un témoignage exceptionnel de l'art de bâtir néo-classique.",
+    "address": "Quai Romain Rolland, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.757363,
+      "longitude": 4.829492
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330872",
+    "updated_at": "2025-05-24T00:46:16.330873",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 217,
+    "category_id": 3,
+    "name": "Préfecture du Rhône",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine xixe siècle lyonnais.",
+    "address": "Place de la République, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.749412,
+      "longitude": 4.837737
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330884",
+    "updated_at": "2025-05-24T00:46:16.330884",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 218,
+    "category_id": 3,
+    "name": "Hôtel des Postes",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "Place Antonin Poncet, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.744371,
+      "longitude": 4.825872
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330892",
+    "updated_at": "2025-05-24T00:46:16.330893",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 219,
+    "category_id": 3,
+    "name": "Halles de Lyon Paul Bocuse",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture moderne.",
+    "address": "102 cours Lafayette, Lyon 3ème",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.756429,
+      "longitude": 4.837509
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330900",
+    "updated_at": "2025-05-24T00:46:16.330901",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 220,
+    "category_id": 3,
+    "name": "Tour Incity",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "Rue Servient, Lyon 3ème",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.753027,
+      "longitude": 4.842912
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330908",
+    "updated_at": "2025-05-24T00:46:16.330909",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 221,
+    "category_id": 3,
+    "name": "Musée des Confluences",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine xxie siècle lyonnais.",
+    "address": "86 quai Perrache, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.760295,
+      "longitude": 4.840699
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330913",
+    "updated_at": "2025-05-24T00:46:16.330914",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 222,
+    "category_id": 3,
+    "name": "Gare de Lyon-Part-Dieu",
+    "description": "Édifice patrimonial de style Moderne, témoignage architectural de la période XXe siècle.",
+    "address": "Place Charles Béraudier, Lyon 3ème",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.765358,
+      "longitude": 4.844758
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330920",
+    "updated_at": "2025-05-24T00:46:16.330921",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 223,
+    "category_id": 3,
+    "name": "Centre commercial Part-Dieu",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture moderne.",
+    "address": "17 rue du Docteur Bouchut, Lyon 3ème",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.753621,
+      "longitude": 4.848797
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330927",
+    "updated_at": "2025-05-24T00:46:16.330928",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 224,
+    "category_id": 3,
+    "name": "Pont Bonaparte",
+    "description": "Monument classé offrant un témoignage exceptionnel de l'art de bâtir néo-classique.",
+    "address": "Entre 1er et 5ème, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.766256,
+      "longitude": 4.836156
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330933",
+    "updated_at": "2025-05-24T00:46:16.330934",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 225,
+    "category_id": 3,
+    "name": "Passerelle du Palais de Justice",
+    "description": "Édifice patrimonial de style Suspendu, témoignage architectural de la période XIXe siècle.",
+    "address": "Entre 5ème et 1er, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.764091,
+      "longitude": 4.825531
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330941",
+    "updated_at": "2025-05-24T00:46:16.330942",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 226,
+    "category_id": 3,
+    "name": "Pont de la Guillotière",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture moderne.",
+    "address": "Entre 3ème et 7ème, Lyon 3ème",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.763435,
+      "longitude": 4.842397
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330948",
+    "updated_at": "2025-05-24T00:46:16.330949",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 227,
+    "category_id": 3,
+    "name": "Pont Wilson",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine xxe siècle lyonnais.",
+    "address": "Entre 6ème et 1er, Lyon 6ème",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.776252,
+      "longitude": 4.842208
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330960",
+    "updated_at": "2025-05-24T00:46:16.330961",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 228,
+    "category_id": 3,
+    "name": "Passerelle du Collège",
+    "description": "Monument classé offrant un témoignage exceptionnel de l'art de bâtir suspendu.",
+    "address": "Entre 5ème et 2ème, Lyon 5ème",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.759304,
+      "longitude": 4.81596
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330966",
+    "updated_at": "2025-05-24T00:46:16.330967",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 229,
+    "category_id": 3,
+    "name": "Place Bellecour",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine xviiie siècle lyonnais.",
+    "address": "Place Bellecour, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.747822,
+      "longitude": 4.841643
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330973",
+    "updated_at": "2025-05-24T00:46:16.330974",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 230,
+    "category_id": 3,
+    "name": "Place des Terreaux",
+    "description": "Monument historique emblématique de Lyon, exemple remarquable d'architecture classique.",
+    "address": "Place des Terreaux, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.772816,
+      "longitude": 4.834235
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330979",
+    "updated_at": "2025-05-24T00:46:16.330980",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 231,
+    "category_id": 3,
+    "name": "Place des Jacobins",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine renaissance lyonnais.",
+    "address": "Place des Jacobins, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.748415,
+      "longitude": 4.839887
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330986",
+    "updated_at": "2025-05-24T00:46:16.330987",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 232,
+    "category_id": 3,
+    "name": "Rue de la République",
+    "description": "Édifice patrimonial de style Haussmannien, témoignage architectural de la période XIXe siècle.",
+    "address": "Rue de la République, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.753257,
+      "longitude": 4.828498
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330992",
+    "updated_at": "2025-05-24T00:46:16.330993",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 233,
+    "category_id": 3,
+    "name": "Quartier de la Croix-Rousse",
+    "description": "Monument classé offrant un témoignage exceptionnel de l'art de bâtir industriel.",
+    "address": "Pentes de la Croix-Rousse, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.769016,
+      "longitude": 4.836927
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.330997",
+    "updated_at": "2025-05-24T00:46:16.330998",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 234,
+    "category_id": 3,
+    "name": "Statue de Louis XIV",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine xixe siècle lyonnais.",
+    "address": "Place Bellecour, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.747205,
+      "longitude": 4.831717
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.331005",
+    "updated_at": "2025-05-24T00:46:16.331006",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 235,
+    "category_id": 3,
+    "name": "Monument aux Morts",
+    "description": "Site d'intérêt architectural majeur, représentatif du patrimoine xxe siècle lyonnais.",
+    "address": "Place Bellecour, Lyon 2ème",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.755795,
+      "longitude": 4.838232
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.331014",
+    "updated_at": "2025-05-24T00:46:16.331015",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 236,
+    "category_id": 3,
+    "name": "Fontaine Bartholdi",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "Place des Terreaux, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.772109,
+      "longitude": 4.831563
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.331019",
+    "updated_at": "2025-05-24T00:46:16.331020",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 237,
+    "category_id": 3,
+    "name": "Mur des Canuts",
+    "description": "Bâtiment remarquable illustrant l'évolution architecturale lyonnaise au fil des siècles.",
+    "address": "Boulevard des Canuts, Lyon 4ème",
+    "arrondissement": "Lyon 4ème",
+    "coordinates": {
+      "latitude": 45.771841,
+      "longitude": 4.825963
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.331027",
+    "updated_at": "2025-05-24T00:46:16.331028",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 238,
+    "category_id": 3,
+    "name": "Fresque des Lyonnais",
+    "description": "Édifice patrimonial de style Trompe-l'œil, témoignage architectural de la période XXe siècle.",
+    "address": "Angle quai Saint-Vincent, Lyon 1er",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.768015,
+      "longitude": 4.832324
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T00:46:16.331033",
+    "updated_at": "2025-05-24T00:46:16.331033",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 239,
+    "category_id": 5,
+    "name": "Musée des Beaux-Arts de Lyon",
+    "description": "Beaux-Arts - Installé dans une ancienne abbaye bénédictine du XVIIe siècle, le musée abrite une des plus riches collections d'art en France, couvrant 5 000 ans d'histoire, de l'Égypte antique à l'art moderne",
+    "address": "20 Place des Terreaux",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.751,
+      "longitude": 4.851
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.130720",
+    "updated_at": "2025-05-24T01:05:05.130743",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 240,
+    "category_id": 5,
+    "name": "Musée d'Art Contemporain de Lyon (MAC Lyon)",
+    "description": "Art Contemporain - Inauguré en 1995, le MAC Lyon est dédié à l'art contemporain sous toutes ses formes",
+    "address": "81 Quai Charles de Gaulle",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.752,
+      "longitude": 4.851999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.131611",
+    "updated_at": "2025-05-24T01:05:05.131616",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 241,
+    "category_id": 5,
+    "name": "Musée des Tissus et des Arts Décoratifs",
+    "description": "Textile et Arts Décoratifs - Fondé en 1864, il possède l'une des plus importantes collections mondiales de textiles, avec plus de 2,5 millions de pièces",
+    "address": "34 Rue de la Charité",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.753,
+      "longitude": 4.853
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.131753",
+    "updated_at": "2025-05-24T01:05:05.131757",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 242,
+    "category_id": 5,
+    "name": "Musée des Moulages",
+    "description": "Moulages - Créé en 1899, il abrite environ 2 000 moulages d'œuvres antiques, médiévales, renaissance et modernes",
+    "address": "87 Cours Gambetta",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.754,
+      "longitude": 4.853999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.131782",
+    "updated_at": "2025-05-24T01:05:05.131784",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 243,
+    "category_id": 5,
+    "name": "Musée Jean Couty",
+    "description": "Monographique - Inauguré en 2017, ce musée est consacré à l'œuvre du peintre lyonnais Jean Couty",
+    "address": "1 Place Henri-Barbusse",
+    "arrondissement": "Lyon 9ème",
+    "coordinates": {
+      "latitude": 45.755,
+      "longitude": 4.8549999999999995
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.131802",
+    "updated_at": "2025-05-24T01:05:05.131803",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 244,
+    "category_id": 5,
+    "name": "Musée d'Histoire de Lyon - Gadagne",
+    "description": "Histoire - Situé dans un bâtiment Renaissance, le musée retrace l'histoire de Lyon à travers une collection de 80 000 objets",
+    "address": "1 Place du Petit Collège",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.756,
+      "longitude": 4.856
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.131818",
+    "updated_at": "2025-05-24T01:05:05.131819",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 245,
+    "category_id": 5,
+    "name": "Échos du passé, promesses du futur",
+    "description": "Exploration de la nature sublimée par le numérique à travers les œuvres de quinze artistes (Au Musée d'Art Contemporain de Lyon (MAC Lyon))",
+    "address": "81 Quai Charles de Gaulle",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.760999999999996,
+      "longitude": 4.831
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.132674",
+    "updated_at": "2025-05-24T01:05:05.132677",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 246,
+    "category_id": 5,
+    "name": "Univers Programmés",
+    "description": "Examen de l'évolution des pratiques artistiques avec le développement des technologies de l'information (Au Musée d'Art Contemporain de Lyon (MAC Lyon))",
+    "address": "81 Quai Charles de Gaulle",
+    "arrondissement": "Lyon 6ème",
+    "coordinates": {
+      "latitude": 45.762,
+      "longitude": 4.832
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.132720",
+    "updated_at": "2025-05-24T01:05:05.132723",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 247,
+    "category_id": 5,
+    "name": "Zurbarán. Réinventer un chef-d'œuvre",
+    "description": "Exposition réunissant pour la première fois trois tableaux de Zurbarán représentant Saint François d'Assise (Au Musée des Beaux-Arts de Lyon)",
+    "address": "20 Place des Terreaux",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.763,
+      "longitude": 4.833
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.132746",
+    "updated_at": "2025-05-24T01:05:05.132748",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 248,
+    "category_id": 5,
+    "name": "L'invention du passé",
+    "description": "Première exposition depuis plus de quarante ans consacrée au courant artistique du XIXe siècle, avec des œuvres de Dominique Ingres, Paul Delaroche et autres (Au Musée des Beaux-Arts de Lyon)",
+    "address": "20 Place des Terreaux",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.763999999999996,
+      "longitude": 4.834
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.132768",
+    "updated_at": "2025-05-24T01:05:05.132769",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 249,
+    "category_id": 5,
+    "name": "Le Temps d'un rêve",
+    "description": "Exposition multidisciplinaire explorant le monde des rêves à travers les neurosciences, l'ethnographie, les arts et la psychanalyse (Au Musée des Confluences)",
+    "address": "Adresse inconnue",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.765,
+      "longitude": 4.835
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.132789",
+    "updated_at": "2025-05-24T01:05:05.132791",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 250,
+    "category_id": 5,
+    "name": "Van Gogh, l'expérience immersive",
+    "description": "Spectacle son et lumière sur plus de 1 000 m², avec des projections des œuvres les plus fascinantes de l'artiste, accompagnées d'une expérience en réalité virtuelle (Au )",
+    "address": "20 Place des Terreaux",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.766,
+      "longitude": 4.836
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.132809",
+    "updated_at": "2025-05-24T01:05:05.132810",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 251,
+    "category_id": 6,
+    "name": "Opéra National de Lyon",
+    "description": "Lieu de musique | Genres: Classique, opéra, ballet | Direction artistique innovante, rénové par Jean Nouvel",
+    "address": "1 Place de la Comédie",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.742000000000004,
+      "longitude": 4.842
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.138146",
+    "updated_at": "2025-05-24T01:05:05.138153",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 252,
+    "category_id": 6,
+    "name": "Auditorium-Orchestre National de Lyon",
+    "description": "Lieu de musique | Genres: Musique symphonique, jazz | Acoustique exceptionnelle, lieu de prestige",
+    "address": "149 Rue Garibaldi",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.744,
+      "longitude": 4.843999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.138834",
+    "updated_at": "2025-05-24T01:05:05.138838",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 253,
+    "category_id": 6,
+    "name": "Le Transbordeur",
+    "description": "Lieu de musique | Genres: Musiques actuelles (rock, électro, rap) | Grande salle (1800 places), programmation internationale",
+    "address": "3 Bd Stalingrad",
+    "arrondissement": "Villeurbanne",
+    "coordinates": {
+      "latitude": 45.746,
+      "longitude": 4.846
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.138862",
+    "updated_at": "2025-05-24T01:05:05.138864",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 254,
+    "category_id": 6,
+    "name": "L'Épicerie Moderne",
+    "description": "Lieu de musique | Genres: Indé, électro, rock | Soutien aux artistes émergents",
+    "address": "Place René Lescot",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.748000000000005,
+      "longitude": 4.848
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.138878",
+    "updated_at": "2025-05-24T01:05:05.138879",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 255,
+    "category_id": 6,
+    "name": "Marché Gare",
+    "description": "Lieu de musique | Genres: Rock, hip-hop, électro, world | Salle underground très active",
+    "address": "34 Rue Casimir Périer",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.75,
+      "longitude": 4.85
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.138941",
+    "updated_at": "2025-05-24T01:05:05.138943",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 256,
+    "category_id": 6,
+    "name": "Ninkasi Gerland / Kao",
+    "description": "Lieu de musique | Genres: Varié (rap, funk, jazz, techno) | Lieu hybride bar/resto/concerts",
+    "address": "267 Rue Marcel Mérieux",
+    "arrondissement": "Lyon 7ème",
+    "coordinates": {
+      "latitude": 45.752,
+      "longitude": 4.851999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.138958",
+    "updated_at": "2025-05-24T01:05:05.138959",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 257,
+    "category_id": 6,
+    "name": "Le Périscope",
+    "description": "Lieu de musique | Genres: Jazz, musiques expérimentales | Résidences et projets artistiques alternatifs",
+    "address": "13 Rue Delandine",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.754000000000005,
+      "longitude": 4.854
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.138972",
+    "updated_at": "2025-05-24T01:05:05.138973",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 258,
+    "category_id": 6,
+    "name": "Nuits de Fourvière",
+    "description": "Festival de musique | Période: Juin à août | Styles: Tous styles (pop, rock, opéra...) | Dans le Théâtre antique de Fourvière",
+    "address": "Divers lieux à Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.752,
+      "longitude": 4.851999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.140454",
+    "updated_at": "2025-05-24T01:05:05.140458",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 259,
+    "category_id": 6,
+    "name": "Nuits Sonores",
+    "description": "Festival de musique | Période: Mai/Juin | Styles: Électro, indé | Référence européenne des festivals électroniques",
+    "address": "Divers lieux à Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.754,
+      "longitude": 4.853999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.140520",
+    "updated_at": "2025-05-24T01:05:05.140522",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 260,
+    "category_id": 6,
+    "name": "Woodstower",
+    "description": "Festival de musique | Période: Août | Styles: Rap, électro, écologie | Festi engagé au Grand Parc Miribel",
+    "address": "Divers lieux à Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.756,
+      "longitude": 4.856
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.140536",
+    "updated_at": "2025-05-24T01:05:05.140537",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 261,
+    "category_id": 6,
+    "name": "Reperkusound",
+    "description": "Festival de musique | Période: Printemps | Styles: Techno, dubstep, bass music | Festival indoor, très énergique",
+    "address": "Divers lieux à Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.758,
+      "longitude": 4.858
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.140547",
+    "updated_at": "2025-05-24T01:05:05.140548",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 262,
+    "category_id": 6,
+    "name": "Jazz à Vienne",
+    "description": "Festival de musique | Période: Juin-Juillet | Styles: Jazz & musiques du monde | À 30min de Lyon, mais culte et international",
+    "address": "Divers lieux à Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.76,
+      "longitude": 4.859999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.140557",
+    "updated_at": "2025-05-24T01:05:05.140559",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 263,
+    "category_id": 6,
+    "name": "Jean-Michel Jarre",
+    "description": "Artiste musical lyonnais | Genre: Musique électronique | Pionnier mondial du synthé, show monumental à Lyon (1986) | Type: Emblématique",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.760999999999996,
+      "longitude": 4.861000000000001
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149632",
+    "updated_at": "2025-05-24T01:05:05.149640",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 264,
+    "category_id": 6,
+    "name": "Benjamin Biolay",
+    "description": "Artiste musical lyonnais | Genre: Chanson pop | Texte poétique et orchestration classe | Type: Emblématique",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.762,
+      "longitude": 4.862
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149678",
+    "updated_at": "2025-05-24T01:05:05.149680",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 265,
+    "category_id": 6,
+    "name": "Vitaa",
+    "description": "Artiste musical lyonnais | Genre: Pop urbaine / R&B | Connue en solo et avec Slimane | Type: Emblématique",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.763,
+      "longitude": 4.863
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149690",
+    "updated_at": "2025-05-24T01:05:05.149691",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 266,
+    "category_id": 6,
+    "name": "André Manoukian",
+    "description": "Artiste musical lyonnais | Genre: Jazz | Figure médiatique et promoteur du jazz en France | Type: Emblématique",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.763999999999996,
+      "longitude": 4.864
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149698",
+    "updated_at": "2025-05-24T01:05:05.149700",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 267,
+    "category_id": 6,
+    "name": "Menace Santana",
+    "description": "Artiste musical lyonnais | Genre: Drill / Trap | Membre influent de la scène drill fr, originaire des Minguettes | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.765,
+      "longitude": 4.865
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149707",
+    "updated_at": "2025-05-24T01:05:05.149708",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 268,
+    "category_id": 6,
+    "name": "So La Lune",
+    "description": "Artiste musical lyonnais | Genre: Rap mélodique / Cloud rap | Flow lunaire, voix autotunée identifiable, textes sensibles | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.766,
+      "longitude": 4.8660000000000005
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149714",
+    "updated_at": "2025-05-24T01:05:05.149716",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 269,
+    "category_id": 6,
+    "name": "Lyonzon (collectif)",
+    "description": "Artiste musical lyonnais | Genre: Trap / Plugg | Composé de Ashe 22, Kpri, Bushi, etc. Scène très active et influente | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.766999999999996,
+      "longitude": 4.867
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149722",
+    "updated_at": "2025-05-24T01:05:05.149723",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 270,
+    "category_id": 6,
+    "name": "Sasso",
+    "description": "Artiste musical lyonnais | Genre: Rap / Trap | Série Enfant2larue, disque d'or, star montante lyonnaise | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.768,
+      "longitude": 4.868
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149729",
+    "updated_at": "2025-05-24T01:05:05.149730",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 271,
+    "category_id": 6,
+    "name": "Thaïs Lona",
+    "description": "Artiste musical lyonnais | Genre: Neo-soul / RnB | Chanteuse montante sur la scène alternative | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.769,
+      "longitude": 4.869000000000001
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149736",
+    "updated_at": "2025-05-24T01:05:05.149737",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 272,
+    "category_id": 6,
+    "name": "Perséide",
+    "description": "Artiste musical lyonnais | Genre: Rock alternatif | Groupe lyonnais avec une grosse présence scénique | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.769999999999996,
+      "longitude": 4.87
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149745",
+    "updated_at": "2025-05-24T01:05:05.149746",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 273,
+    "category_id": 6,
+    "name": "Eliott Jane",
+    "description": "Artiste musical lyonnais | Genre: Pop, électro, classique moderne | Variété et éclectisme musical fort à Lyon | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.771,
+      "longitude": 4.871
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149752",
+    "updated_at": "2025-05-24T01:05:05.149753",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 274,
+    "category_id": 6,
+    "name": "Vannye",
+    "description": "Artiste musical lyonnais | Genre: Pop, électro, classique moderne | Variété et éclectisme musical fort à Lyon | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.772,
+      "longitude": 4.872
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149759",
+    "updated_at": "2025-05-24T01:05:05.149760",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 275,
+    "category_id": 6,
+    "name": "Trio SR9",
+    "description": "Artiste musical lyonnais | Genre: Pop, électro, classique moderne | Variété et éclectisme musical fort à Lyon | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.772999999999996,
+      "longitude": 4.873
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149766",
+    "updated_at": "2025-05-24T01:05:05.149767",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 276,
+    "category_id": 6,
+    "name": "Animali",
+    "description": "Artiste musical lyonnais | Genre: Pop, électro, classique moderne | Variété et éclectisme musical fort à Lyon | Type: Émergent",
+    "address": "Lyon",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.774,
+      "longitude": 4.8740000000000006
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.149773",
+    "updated_at": "2025-05-24T01:05:05.149774",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 277,
+    "category_id": 4,
+    "name": "Opéra National de Lyon",
+    "description": "Lieu de spectacle | Type: Opéra et Ballet | Capacité: 1100 | Construit en 1831 sous le nom de « Grand Théâtre », il a été entièrement restructuré entre 1989 et 1993 par l'architecte Jean Nouvel, qui a ajouté une coupole en verre et acier",
+    "address": "1 Place de la Comédie",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.771,
+      "longitude": 4.841
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.153986",
+    "updated_at": "2025-05-24T01:05:05.153994",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 278,
+    "category_id": 4,
+    "name": "Théâtre des Célestins",
+    "description": "Lieu de spectacle | Type: Théâtre | Capacité: 950 (salle principale), 130 (La Célestine) | Fondé en 1792, le théâtre a été reconstruit en 1877 par l'architecte Gaspard André après un incendie. Il est inscrit aux monuments historiques depuis 1997",
+    "address": "4 Rue Charles Dullin",
+    "arrondissement": "Lyon 2ème",
+    "coordinates": {
+      "latitude": 45.772000000000006,
+      "longitude": 4.842
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.155487",
+    "updated_at": "2025-05-24T01:05:05.155498",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 279,
+    "category_id": 4,
+    "name": "Théâtre antique de Fourvière",
+    "description": "Lieu de spectacle | Type: Théâtre antique | Capacité:  | Festival pluridisciplinaire créé en 1946, proposant théâtre, musique, danse, cirque et cinéma",
+    "address": "Adresse non précisée",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.773,
+      "longitude": 4.843
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.155541",
+    "updated_at": "2025-05-24T01:05:05.155545",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 280,
+    "category_id": 4,
+    "name": "Maison de la Danse",
+    "description": "Lieu de spectacle | Type: Danse | Capacité: 1140 | Fondée en 1980 par cinq chorégraphes lyonnais, elle déménage en 1992 dans l'ancien Théâtre du 8ème",
+    "address": "8 Avenue Jean Mermoz",
+    "arrondissement": "Lyon 8ème",
+    "coordinates": {
+      "latitude": 45.774,
+      "longitude": 4.843999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.155576",
+    "updated_at": "2025-05-24T01:05:05.155577",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 281,
+    "category_id": 4,
+    "name": "Auditorium-Orchestre National de Lyon",
+    "description": "Lieu de spectacle | Type: Musique | Capacité: 2100 | Inauguré en 1975, c'est la première salle en France construite exclusivement pour la musique",
+    "address": "149 Rue Garibaldi",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.775000000000006,
+      "longitude": 4.845
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.155593",
+    "updated_at": "2025-05-24T01:05:05.155595",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 282,
+    "category_id": 4,
+    "name": "Théâtre Tête d'Or",
+    "description": "Lieu de spectacle | Type: Théâtre | Capacité: 400 | Ouvert en 1980 dans une ancienne cartonnerie, il s'installe en 2001 dans l'ancienne salle La Cigale, datant de 1925",
+    "address": "60 Avenue du Maréchal de Saxe",
+    "arrondissement": "Lyon 3ème",
+    "coordinates": {
+      "latitude": 45.776,
+      "longitude": 4.846
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.155609",
+    "updated_at": "2025-05-24T01:05:05.155610",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 283,
+    "category_id": 4,
+    "name": "Cirque Imagine",
+    "description": "Lieu de spectacle | Type: Cirque et Cabaret | Capacité: Plusieurs chapiteaux permanents | Créé en 1999 par la famille Massot, le cirque s'est installé de manière permanente aux portes de Lyon, proposant un concept inédit de dîner-spectacle cabaret-cirque",
+    "address": "Carré de Soie",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.777,
+      "longitude": 4.8469999999999995
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.155626",
+    "updated_at": "2025-05-24T01:05:05.155627",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 284,
+    "category_id": 4,
+    "name": "Wozzeck d'Alban Berg",
+    "description": "Opéra | Production saluée pour sa scénographie innovante | Date: 2024 | Lieu: Opéra National de Lyon",
+    "address": "1 Place de la Comédie",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.751,
+      "longitude": 4.851
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.157299",
+    "updated_at": "2025-05-24T01:05:05.157305",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 285,
+    "category_id": 4,
+    "name": "Béatrice et Bénédict d'Hector Berlioz",
+    "description": "Opéra | Adaptation comique basée sur Beaucoup de bruit pour rien de Shakespeare | Date: Mai 2024 | Lieu: Opéra National de Lyon",
+    "address": "1 Place de la Comédie",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.752,
+      "longitude": 4.851999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.157342",
+    "updated_at": "2025-05-24T01:05:05.157344",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 286,
+    "category_id": 4,
+    "name": "Nuits de Fourvière",
+    "description": "Festival | Performances de James Blake, Patti Smith, et autres artistes internationaux | Date: Juin-Août 2024 | Lieu: Théâtre antique de Fourvière",
+    "address": "Adresse non précisée",
+    "arrondissement": "Lyon 5ème",
+    "coordinates": {
+      "latitude": 45.753,
+      "longitude": 4.853
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.157401",
+    "updated_at": "2025-05-24T01:05:05.157403",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 287,
+    "category_id": 4,
+    "name": "Partitions d'instincts de Louis Combeaud",
+    "description": "Danse | Impliquant des jeunes suivis en psychiatrie, des proches et des soignants | Date: 2024 | Lieu: Maison de la Danse",
+    "address": "8 Avenue Jean Mermoz",
+    "arrondissement": "Lyon 8ème",
+    "coordinates": {
+      "latitude": 45.754,
+      "longitude": 4.853999999999999
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.157426",
+    "updated_at": "2025-05-24T01:05:05.157427",
+    "opening_hours": [],
+    "images": []
+  },
+  {
+    "id": 288,
+    "category_id": 4,
+    "name": "Fête des Lumières",
+    "description": "Festival | Installations lumineuses, projections et performances artistiques dans toute la ville | Date: Autour du 8 décembre | Lieu: Toute la ville de Lyon",
+    "address": "Adresse inconnue",
+    "arrondissement": "Lyon 1er",
+    "coordinates": {
+      "latitude": 45.755,
+      "longitude": 4.8549999999999995
+    },
+    "contact": null,
+    "preview_video": null,
+    "created_at": "2025-05-24T01:05:05.157447",
+    "updated_at": "2025-05-24T01:05:05.157448",
+    "opening_hours": [],
+    "images": []
+  }
+]

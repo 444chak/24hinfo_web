@@ -5,7 +5,7 @@ import { colors } from "../theme";
 export const Footer = () => {
   return (
     <footer className="mt-20 text-center">
-      <p className={`${smooch.className} text-2xl text-white/80`}>
+      <p className={`${smooch.className} text-2xl text-white/80 select-none`}>
         Made with{" "}
         <Heart
           className="inline-block w-6 h-6 mx-2"

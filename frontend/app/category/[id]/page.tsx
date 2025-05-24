@@ -3,6 +3,10 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
+import { Background } from "../../components/Background";
+import { FlashlightEffect } from "../../components/FlashlightEffect";
+import { Modal } from "../../components/Modal";
+import { Footer } from "../../components/Footer";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
@@ -25,6 +29,7 @@ export default function CategoryPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [categoryName, setCategoryName] = useState<string>("");
+  const [selectedItem, setSelectedItem] = useState<CulturalItem | null>(null);
 
   useEffect(() => {
     const fetchCategoryAndItems = async () => {
@@ -64,8 +69,9 @@ export default function CategoryPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black">
-        <div className="container mx-auto px-4 py-8">
+      <div className="min-h-screen relative">
+        <Background />
+        <div className="container mx-auto px-4 py-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3].map((index) => (
               <div
@@ -85,8 +91,9 @@ export default function CategoryPage() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center">
-        <div className="text-red-500 text-center p-8 bg-black/20 backdrop-blur-sm rounded-lg">
+      <div className="min-h-screen relative flex items-center justify-center">
+        <Background />
+        <div className="text-red-500 text-center p-8 bg-black/20 backdrop-blur-sm rounded-lg relative z-10">
           {error}
         </div>
       </div>
@@ -94,53 +101,97 @@ export default function CategoryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black">
-      <div className="container mx-auto px-4 py-8">
-        <button
-          onClick={() => router.back()}
-          className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors mb-8 group"
-        >
-          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-          Retour
-        </button>
+    <div className="min-h-screen relative">
+      <Background />
+      <FlashlightEffect>
+        <div className="container mx-auto px-4 py-8 relative z-10">
+          <button
+            onClick={() => router.back()}
+            className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors mb-8 group"
+          >
+            <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+            Retour
+          </button>
 
-        <h1 className="text-4xl font-bold mb-8 text-white bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-          {categoryName}
-        </h1>
+          <h1 className="text-4xl font-bold mb-8 text-white bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            {categoryName}
+          </h1>
 
-        <div className="text-gray-400 mb-6">
-          {items.length} {items.length === 1 ? "élément" : "éléments"} dans
-          cette catégorie
-        </div>
+          <div className="text-gray-400 mb-6">
+            {items.length} {items.length === 1 ? "élément" : "éléments"} dans
+            cette catégorie
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6"
-            >
-              <h2 className="text-xl font-semibold text-white mb-3">
-                {item.name}
-              </h2>
-              <p className="text-gray-300 mb-4">{item.description}</p>
-              <div className="text-sm text-gray-400">
-                <p>ID: {item.id}</p>
-                <p>Catégorie ID: {item.category_id}</p>
-                {item.coordinates && (
-                  <a
-                    href={`https://www.google.com/maps?q=${item.coordinates.latitude},${item.coordinates.longitude}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block"
-                  >
-                    Voir sur Google Maps
-                  </a>
-                )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {items.map((item) => (
+              <div
+                key={item.id}
+                onClick={() => setSelectedItem(item)}
+                className="bg-black/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6 cursor-pointer"
+              >
+                <h2 className="text-xl font-semibold text-white mb-3">
+                  {item.name}
+                </h2>
+                <p className="text-gray-300 mb-4">{item.description}</p>
+                <div className="text-sm text-gray-400">
+                  <p>ID: {item.id}</p>
+                  <p>Catégorie ID: {item.category_id}</p>
+                  {item.coordinates && (
+                    <a
+                      href={`https://www.google.com/maps?q=${item.coordinates.latitude},${item.coordinates.longitude}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Voir sur Google Maps
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <Modal
+            isOpen={selectedItem !== null}
+            onClose={() => setSelectedItem(null)}
+          >
+            {selectedItem && (
+              <div className="text-white">
+                <h2 className="text-3xl font-bold mb-4">{selectedItem.name}</h2>
+                <div className="aspect-video w-full bg-black/40 rounded-lg mb-6 overflow-hidden">
+                  {selectedItem.image_url && (
+                    <img
+                      src={selectedItem.image_url}
+                      alt={selectedItem.name}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
+                <p className="text-lg text-gray-300 mb-6">
+                  {selectedItem.description}
+                </p>
+                <div className="text-sm text-gray-400">
+                  <p>ID: {selectedItem.id}</p>
+                  <p>Catégorie ID: {selectedItem.category_id}</p>
+                  {selectedItem.coordinates && (
+                    <a
+                      href={`https://www.google.com/maps?q=${selectedItem.coordinates.latitude},${selectedItem.coordinates.longitude}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors mt-2 inline-block"
+                    >
+                      Voir sur Google Maps
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
+          </Modal>
+
+          <Footer />
         </div>
-      </div>
+      </FlashlightEffect>
     </div>
   );
 }
