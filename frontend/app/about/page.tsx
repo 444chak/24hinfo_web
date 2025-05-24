@@ -89,20 +89,18 @@ export default function AboutPage() {
           >
             Stack technique
           </motion.h2>
-          <motion.p
-            className="text-lg text-white mb-4"
+          <motion.ul
+            className="list-disc list-inside text-lg text-white mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <ul className="list-disc list-inside">
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>Tailwind CSS</li>
-              <li>FastApi</li>
-              <li>SqlLite</li>
-            </ul>
-          </motion.p>
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>FastApi</li>
+            <li>SqlLite</li>
+          </motion.ul>
           <br />
           <motion.p
             className="text-lg text-white mb-4 italic"
