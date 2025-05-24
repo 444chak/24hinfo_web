@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Littérature",
+    "description": "Bibliothèques, librairies, centres de documentation et lieux dédiés à la lecture et à l'écriture à Lyon.",
+    "icon": "book-open",
+    "primary": "#3B82F6"
+  },
+  {
+    "id": 3,
+    "name": "Architecture",
+    "description": "Monuments historiques, édifices remarquables et patrimoine architectural de Lyon.",
+    "icon": "building",
+    "primary": "#3B82F6"
+  },
+  {
+    "id": 4,
+    "name": "Spectacle Vivant",
+    "description": "Théâtre, danse, performances et spectacles en direct",
+    "icon": "drama",
+    "primary": "#3B82F6"
+  },
+  {
+    "id": 5,
+    "name": "Arts Visuels",
+    "description": "Peinture, sculpture, photographie et arts plastiques",
+    "icon": "palette",
+    "primary": "#3B82F6"
+  },
+  {
+    "id": 6,
+    "name": "Musique",
+    "description": "Concerts, festivals et événements musicaux",
+    "icon": "music",
+    "primary": "#3B82F6"
+  }
+]

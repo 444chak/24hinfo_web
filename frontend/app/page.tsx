@@ -1,73 +1,54 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { DynamicIcon } from "lucide-react/dynamic";
-import { colors, gradients } from "./theme";
-
-interface Item {
-  id: number;
-  name: string;
-  description: string | null;
-}
+import { colors } from "./theme";
+import { FlashlightEffect } from "./components/FlashlightEffect";
+import { Background } from "./components/Background";
+import { Footer } from "./components/Footer";
+import { eagleLake, outfit } from "./fonts";
+import Categories from "./components/Categories";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
-  const [items] = useState<Item[]>([
-    {
-      id: 1,
-      name: "Item 1",
-      description: "Description for item 1",
-    },
-    {
-      id: 2,
-      name: "Item 2",
-      description: "Description for item 2",
-    },
-    {
-      id: 3,
-      name: "Item 3",
-      description: "Description for item 3",
-    },
-  ]);
-
   return (
-    <main className="min-h-screen p-8 relative">
-      <div
-        className={`absolute inset-0 bg-gradient-to-tr ${gradients.main} animate-gradient-x`}
-      ></div>
-      <div
-        className="fixed inset-0 bg-black/65 pointer-events-none z-20"
-        style={{
-          background: `radial-gradient(circle 175px at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.45) 100%)`,
-        }}
-      />
-      <div className="relative z-10">
-        <h1 className="text-4xl font-bold mb-8 text-white">
-          Next.js + FastAPI Demo
-        </h1>
-        <DynamicIcon name={"guitar"} color={colors.text.primary} size={32} />
-        <div className="flex flex-col gap-6">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="p-8 bg-black/20 backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-white w-full hover:bg-black/30 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]"
-            >
-              <h2 className="text-2xl font-semibold mb-4">{item.name}</h2>
-              <p className="text-gray-200 text-lg">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+    <main className={`min-h-screen p-20 relative ${outfit.className}`}>
+      <Background />
+      <FlashlightEffect>
+        <motion.div
+          className="relative z-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <motion.h1
+            className={`text-5xl font-bold mb-8 ${eagleLake.className} text-center select-none
+              bg-gradient-to-r from-[#DBAF19] to-[#FFD700] bg-clip-text text-transparent
+              [text-shadow:_0_0_15px_#DBAF19]
+              [animation:_pulse_3s_ease-in-out_infinite]`}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Lumyons
+          </motion.h1>
+          <motion.p
+            className="text-xl text-center mb-12 text-gray-200 font-medium tracking-wide"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            Eclaires ta culture de Lyon.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <Categories />
+          </motion.div>
+          <Footer />
+        </motion.div>
+      </FlashlightEffect>
     </main>
   );
 }

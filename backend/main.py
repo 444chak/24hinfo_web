@@ -1,41 +1,42 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List
+from app.config import settings
+from app.api import api_router
 
-app = FastAPI(title="Next.js + FastAPI Backend")
+# Créer l'application FastAPI
+app = FastAPI(
+    title=settings.APP_NAME,
+    version=settings.API_VERSION,
+    description="API pour les informations culturelles essentielles de Lyon",
+)
 
-# Configure CORS
+# Configurer CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Frontend URL
+    allow_origins=[settings.FRONTEND_URL],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-class Item(BaseModel):
-    id: int
-    name: str
-    description: str | None = None
+# Inclure le routeur API principal
+app.include_router(api_router)
 
-# Example data
-items = [
-    Item(id=1, name="Item 1", description="Description for Item 1"),
-    Item(id=2, name="Item 2", description="Description for Item 2"),
-]
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to FastAPI backend!"}
+    """
+    Racine de l'API
+    """
+    return {
+        "message": "Bienvenue sur l'API Culturelle de Lyon!",
+        "version": settings.API_VERSION,
+        "documentation": "/docs",
+    }
 
-@app.get("/api/items", response_model=List[Item])
-async def get_items():
-    return items
 
-@app.get("/api/items/{item_id}", response_model=Item)
-async def get_item(item_id: int):
-    for item in items:
-        if item.id == item_id:
-            return item
-    return {"error": "Item not found"} 
+# Pour démarrer l'application avec uvicorn
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

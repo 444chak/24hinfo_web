@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.6.7",
+    "framer-motion": "^12.12.2",
     "lucide-react": "^0.511.0",
     "next": "14.1.0",
     "next-fastapi-frontend": "file:",
