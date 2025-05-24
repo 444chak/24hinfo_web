@@ -9,7 +9,8 @@ import { Modal } from "../../components/Modal";
 import { Footer } from "../../components/Footer";
 import { motion } from "framer-motion";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8001";
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://lumyons.chkb.fr/api";
 
 interface CulturalItem {
   id: number;

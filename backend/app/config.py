@@ -10,7 +10,7 @@ class Settings:
     APP_NAME: str = "API Culturelle de Lyon"
     API_VERSION: str = "1.0.0"
     API_PREFIX: str = "/api"
-    FRONTEND_URL: str = "http://localhost:3000"
+    FRONTEND_URL: str = "http://lumyons.chkb.fr"
 
     # Extension possible pour une base de données réelle
     DB_HOST: str = "localhost"
