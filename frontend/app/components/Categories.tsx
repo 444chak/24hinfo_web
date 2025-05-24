@@ -69,7 +69,7 @@ export default function Categories() {
       {categories.map((category) => (
         <div
           key={category.id}
-          className="p-6 sm:p-8 bg-black/20 sm:backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-[height,transform,box-shadow] duration-1000 ease-in-out text-white w-full hover:bg-black/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] text-center h-[140px] sm:h-[150px] hover:h-[200px] hover:z-10 relative group cursor-pointer"
+          className="p-6 sm:p-8 bg-black/20 sm:backdrop-blur-sm rounded-lg shadow-md hover:shadow-lg transition-[height,transform,box-shadow] duration-1000 ease-in-out text-white w-full hover:bg-black/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.25)] text-center h-[300px] sm:h-[150px] hover:h-[200px] hover:z-10 relative group cursor-pointer"
           onClick={() => handleCategoryClick(category.id)}
         >
           <div className="flex items-center justify-center mb-4">
