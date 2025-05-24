@@ -19,24 +19,17 @@ Une application web moderne qui met en valeur la beauté et le dynamisme de la v
 - Next.js 14 (Framework React)
 - TypeScript
 - Tailwind CSS
-- PostCSS
-- Shadcn/ui (Composants UI)
 - React Query (Gestion des données)
-- Zustand (Gestion d'état)
-- Mapbox GL (Cartographie interactive)
 
 ### Backend
 
 - FastAPI (Framework Python)
 - Uvicorn (Serveur ASGI)
-- SQLAlchemy (ORM)
-- PostgreSQL (Base de données)
-- Redis (Cache)
-- Celery (Tâches asynchrones)
+- SQLite (Base de données)
 
 ## 📁 Structure du Projet
 
-```
+```txt
 .
 ├── frontend/                 # Application Next.js
 │   ├── app/                 # Pages et routes de l'application
@@ -60,8 +53,6 @@ Une application web moderne qui met en valeur la beauté et le dynamisme de la v
 
 - Node.js 18+
 - Python 3.9+
-- PostgreSQL 14+
-- Redis
 
 ### Configuration du Frontend
 
@@ -77,13 +68,7 @@ cd frontend
 npm install
 ```
 
-3. Configurez les variables d'environnement :
-
-```bash
-cp .env.example .env.local
-```
-
-4. Lancez le serveur de développement :
+3. Lancez le serveur de développement :
 
 ```bash
 npm run dev
@@ -131,42 +116,18 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-6. Initialisez la base de données :
-
-```bash
-alembic upgrade head
-```
-
-7. Lancez le serveur de développement :
+6. Lancez le serveur de développement :
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-L'API backend sera accessible à l'adresse [http://localhost:8000](http://localhost:8000)
-La documentation de l'API sera disponible à [http://localhost:8000/docs](http://localhost:8000/docs)
-
-## 🧪 Tests
-
-### Frontend
-
-```bash
-cd frontend
-npm run test
-```
-
-### Backend
-
-```bash
-cd backend
-pytest
-```
+L'API backend sera accessible à l'adresse [http://localhost:8001](http://localhost:8001)
+La documentation de l'API sera disponible à [http://localhost:8001/docs](http://localhost:8001/docs)
 
 ## 📝 Documentation
 
-- [Documentation API](http://localhost:8000/docs)
-- [Guide de Contribution](./CONTRIBUTING.md)
-- [Changelog](./CHANGELOG.md)
+- [Documentation API](http://localhost:8001/docs)
 
 ## 🤝 Contribution
 
